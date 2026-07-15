@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
     <!-- Header -->
@@ -20,16 +20,16 @@
             <nav class="nav">
                 <ul>
                     <li><a href="#" class="active">TRANG CHỦ</a></li>
-                    <li><a href="#">CỬA COMPOSITE</a></li>
-                    <li><a href="#">DỰ ÁN</a></li>
-                    <li><a href="#">ĐỐI TÁC</a></li>
-                    <li><a href="#">VỀ MIVI</a></li>
+                    <li><a href="#ve-chung-toi">VỀ CHÚNG TÔI</a></li>
+                    <li><a href="#san-pham">SẢN PHẨM</a></li>
+                    <li><a href="#bst-luxury">BST MIVIDOOR LUXURY</a></li>
+                    <li><a href="#chinh-sach-dai-ly">HƯỚNG DẪN CHÍNH SÁCH ĐẠI LÝ</a></li>
                     <li><a href="#contact">LIÊN HỆ</a></li>
                 </ul>
             </nav>
             <div class="header-contact">
-                <a href="tel:0947711116" class="btn btn-outline-danger btn-pill">
-                    <i class="fa-solid fa-phone"></i> 0947 711 116
+                <a href="tel:0943393539" class="btn btn-outline-danger btn-pill">
+                    <i class="fa-solid fa-phone"></i> 0943 39 35 39
                 </a>
             </div>
             <button class="mobile-menu-btn" id="openSidebar" style="display: none; background: none; border: none; cursor: pointer; padding: 5px; color: var(--primary-color);">
@@ -59,16 +59,16 @@
         <nav class="sidebar-nav">
             <ul style="list-style: none; padding: 0; margin: 0;">
                 <li style="margin-bottom: 25px;"><a href="#" class="active" onclick="closeMenu()" style="font-size: 1.1rem; font-weight: 600; color: var(--text-main); text-decoration: none; text-transform: uppercase; display: block;">TRANG CHỦ</a></li>
-                <li style="margin-bottom: 25px;"><a href="#cua-composite" onclick="closeMenu()" style="font-size: 1.1rem; font-weight: 600; color: var(--text-main); text-decoration: none; text-transform: uppercase; display: block;">CỬA COMPOSITE</a></li>
+                <li style="margin-bottom: 25px;"><a href="#ve-chung-toi" onclick="closeMenu()" style="font-size: 1.1rem; font-weight: 600; color: var(--text-main); text-decoration: none; text-transform: uppercase; display: block;">VỀ CHÚNG TÔI</a></li>
                 <li style="margin-bottom: 25px;"><a href="#san-pham" onclick="closeMenu()" style="font-size: 1.1rem; font-weight: 600; color: var(--text-main); text-decoration: none; text-transform: uppercase; display: block;">SẢN PHẨM</a></li>
-                <li style="margin-bottom: 25px;"><a href="#doi-tac" onclick="closeMenu()" style="font-size: 1.1rem; font-weight: 600; color: var(--text-main); text-decoration: none; text-transform: uppercase; display: block;">ĐỐI TÁC</a></li>
-                <li style="margin-bottom: 25px;"><a href="#ve-mivi" onclick="closeMenu()" style="font-size: 1.1rem; font-weight: 600; color: var(--text-main); text-decoration: none; text-transform: uppercase; display: block;">VỀ MIVI</a></li>
+                <li style="margin-bottom: 25px;"><a href="#bst-luxury" onclick="closeMenu()" style="font-size: 1.1rem; font-weight: 600; color: var(--text-main); text-decoration: none; text-transform: uppercase; display: block;">BST MIVIDOOR LUXURY</a></li>
+                <li style="margin-bottom: 25px;"><a href="#chinh-sach-dai-ly" onclick="closeMenu()" style="font-size: 1.1rem; font-weight: 600; color: var(--text-main); text-decoration: none; text-transform: uppercase; display: block;">HƯỚNG DẪN CHÍNH SÁCH ĐẠI LÝ</a></li>
                 <li style="margin-bottom: 25px;"><a href="#contact" onclick="closeMenu()" style="font-size: 1.1rem; font-weight: 600; color: var(--text-main); text-decoration: none; text-transform: uppercase; display: block;">LIÊN HỆ</a></li>
             </ul>
         </nav>
         <div class="sidebar-footer" style="margin-top: auto; padding-top: 20px; border-top: 1px solid #eee;">
-            <a href="tel:0947711116" class="btn btn-danger btn-pill w-100 text-center" style="display: block; box-sizing: border-box; text-decoration: none;">
-                <i class="fa-solid fa-phone"></i> 0947 711 116
+            <a href="tel:0943393539" class="btn btn-danger btn-pill w-100 text-center" style="display: block; box-sizing: border-box; text-decoration: none;">
+                <i class="fa-solid fa-phone"></i> 0943 39 35 39
             </a>
         </div>
     </div>
@@ -76,51 +76,82 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-bg-wrapper">
-            <div class="hero-bg-slide active" style="background-image: url('images/hero1.png')"></div>
-            <div class="hero-bg-slide" style="background-image: url('images/hero2.png')"></div>
-            <div class="hero-bg-slide" style="background-image: url('images/hero3.png')"></div>
-            <div class="hero-bg-slide" style="background-image: url('images/hero4.png')"></div>
-            <div class="hero-bg-left"></div>
-        </div>
-        <div class="container hero-container">
-            <div class="hero-content">
-                <div class="hero-subtitle">CỬA COMPOSITE</div>
-                <h1 class="hero-title">CÔNG NGHỆ ĐỨC</h1>
-                <h2 class="hero-title-highlight">BỀN ĐẸP VƯỢT THỜI GIAN</h2>
-                <p class="hero-description">
-                    Cửa MIVICOMPOSITE ứng dụng công nghệ và vật liệu cao cấp<br>chuẩn Đức, mang đến giải pháp cửa bền chắc, chống nước,<br>cách âm vượt trội và thẩm mỹ tinh tế.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#" class="btn btn-primary">KHÁM PHÁ SẢN PHẨM <i class="fa-solid fa-arrow-right-long"></i></a>
-                    <a href="#" class="btn btn-outline"><i class="fa-regular fa-comment-dots"></i> TƯ VẤN MIỄN PHÍ <i class="fa-solid fa-arrow-right-long"></i></a>
+            <!-- Slide 1 -->
+            <div class="hero-bg-slide active" style="background-image: url('images/hero1.png')">
+                <div class="hero-bg-left"></div>
+                <div class="container hero-container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">CỬA COMPOSITE<br><span class="hero-title-highlight">CÔNG NGHỆ ĐỨC</span></h1>
+                        <p class="hero-description" style="max-width: 600px; line-height: 1.6;">
+                            Mỗi bộ cửa được tạo nên từ nguồn nguyên vật liệu cao cấp được tuyển chọn kĩ lưỡng kết hợp cùng công nghệ phủ phim đến từ Đức, mang đến vẻ đẹp tinh tế, độ hoàn thiện sắc nét và giá trị thẩm mỹ vượt trội.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#san-pham" class="btn btn-primary">KHÁM PHÁ SẢN PHẨM <i class="fa-solid fa-arrow-right-long"></i></a>
+                            <a href="#" onclick="openContactModal(event)" class="btn btn-outline"><i class="fa-regular fa-comment-dots"></i> TƯ VẤN CHÍNH SÁCH ĐẠI LÝ <i class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="hero-features">
-                    <div class="feature-item">
-                        <div class="icon-circle flag-circle">
-                            <img src="https://flagcdn.com/w40/de.png" alt="Germany">
+            </div>
+            <!-- Slide 2 -->
+            <div class="hero-bg-slide" style="background-image: url('images/hero2.png')">
+                <div class="hero-bg-left"></div>
+                <div class="container hero-container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">BỘ SƯU TẬP<br><span class="hero-title-highlight">MIVIDOOR LUXURY 2026</span></h1>
+                        <p class="hero-description" style="max-width: 600px; line-height: 1.6;">
+                            Trải nghiệm không gian sống thượng lưu với những mẫu cửa được thiết kế độc quyền, dẫn đầu xu hướng nội thất hiện đại và sang trọng nhất năm 2026.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#bst-luxury" class="btn btn-primary">XEM BỘ SƯU TẬP <i class="fa-solid fa-arrow-right-long"></i></a>
+                            <a href="#" onclick="openContactModal(event)" class="btn btn-outline"><i class="fa-regular fa-comment-dots"></i> NHẬN BÁO GIÁ NGAY <i class="fa-solid fa-arrow-right-long"></i></a>
                         </div>
-                        <span>Công nghệ<br>Đức</span>
                     </div>
-                    <div class="feature-item">
-                        <div class="icon-hexagon">
-                            <i class="fa-solid fa-shield-halved"></i>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="hero-bg-slide" style="background-image: url('images/hero3.png')">
+                <div class="hero-bg-left"></div>
+                <div class="container hero-container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">CHẤT LƯỢNG<br><span class="hero-title-highlight">BỀN ĐẸP VƯỢT THỜI GIAN</span></h1>
+                        <p class="hero-description" style="max-width: 600px; line-height: 1.6;">
+                            Tự hào mang đến các sản phẩm cửa với khả năng chống nước 100%, không cong vênh, chống mối mọt và cách âm hoàn hảo, bảo hành lên đến 10 năm.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#ve-chung-toi" class="btn btn-primary">TÌM HIỂU THÊM <i class="fa-solid fa-arrow-right-long"></i></a>
+                            <a href="#" onclick="openContactModal(event)" class="btn btn-outline"><i class="fa-regular fa-comment-dots"></i> LIÊN HỆ ĐẠI LÝ <i class="fa-solid fa-arrow-right-long"></i></a>
                         </div>
-                        <span>Vật liệu<br>cao cấp</span>
-                    </div>
-                    <div class="feature-item">
-                        <div class="icon-hexagon">
-                            <i class="fa-solid fa-award"></i>
-                        </div>
-                        <span>Bảo hành<br>10 năm</span>
                     </div>
                 </div>
             </div>
             
-            <div class="hero-pagination">
+        </div>
+        <div class="container hero-container-features" style="position: absolute; bottom: 0; left: 0; right: 0; z-index: 10; pointer-events: none;">
+            <div class="hero-features" style="pointer-events: auto; padding-bottom: 120px;">
+                <div class="feature-item">
+                    <div class="icon-circle flag-circle">
+                        <img src="https://flagcdn.com/w40/de.png" alt="Germany">
+                    </div>
+                    <span>Công nghệ<br>Đức</span>
+                </div>
+                <div class="feature-item">
+                    <div class="icon-hexagon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <span>Vật liệu<br>cao cấp</span>
+                </div>
+                <div class="feature-item">
+                    <div class="icon-hexagon">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <span>Bảo hành<br>10 năm</span>
+                </div>
+            </div>
+            
+            <div class="hero-pagination" style="pointer-events: auto;">
                 <span class="dot active" onclick="goToSlide(0)"></span>
                 <span class="dot" onclick="goToSlide(1)"></span>
                 <span class="dot" onclick="goToSlide(2)"></span>
-                <span class="dot" onclick="goToSlide(3)"></span>
             </div>
         </div>
     </section>
@@ -161,13 +192,14 @@
         </div>
     </section>
 
-    <!-- Why Choose Us -->
-    <section class="why-choose-us">
+    <!-- Về Chúng Tôi - Vì sao chọn -->
+    <section id="ve-chung-toi" class="why-choose-us deep-section">
         <div class="container">
-            <h2 class="section-title text-center">VÌ SAO CHỌN CỬA MIVICOMPOSITE?</h2>
+            <h2 class="section-title text-center">VÌ SAO CHỌN CỬA COMPOSITE MIVIDOOR?</h2>
             <div class="title-underline"></div>
             
-            <div class="reasons-grid">
+            <!-- Phần 1: Tính năng -->
+            <div class="reasons-grid" style="margin-bottom: 50px;">
                 <div class="reason-card">
                     <div class="reason-icon"><i class="fa-solid fa-droplet-slash"></i></div>
                     <h3>Chống nước tuyệt đối</h3>
@@ -199,387 +231,149 @@
                     <p>Giữ nhiệt độ phòng ổn định mặc cho sự thay đổi khắc nghiệt của thời tiết.</p>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Featured Collection -->
-    <section class="featured-collection">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">BỘ SƯU TẬP NỔI BẬT</h2>
-                <a href="#" class="view-all">Xem tất cả <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-            
-            <div class="collection-grid">
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/mau-cua-phang.jpg" alt="Cửa Phẳng">
-                    </div>
-                    <div class="product-content">
-                        <h3>Cửa Phẳng</h3>
-                        <p class="product-tags">Tối giản - Tinh tế</p>
-                        <a href="https://mivicomposite.vn/san-pham/cua-phang/" target="_blank" class="view-detail text-red">XEM CHI TIẾT <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/mau-nep-nhom-inox.jpg" alt="Cửa Nẹp Nhôm Inox">
-                    </div>
-                    <div class="product-content">
-                        <h3>Cửa Nẹp Nhôm Inox</h3>
-                        <p class="product-tags">Sang trọng - Điểm nhấn</p>
-                        <a href="https://mivicomposite.vn/san-pham/cua-nep-nhom-inox/" target="_blank" class="view-detail text-red">XEM CHI TIẾT <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/mau-phao-chi-noi.jpg" alt="Cửa Phào Chỉ Nổi">
-                    </div>
-                    <div class="product-content">
-                        <h3>Cửa Phào Chỉ Nổi</h3>
-                        <p class="product-tags">Cổ điển - Đẳng cấp</p>
-                        <a href="https://mivicomposite.vn/san-pham/cua-phao-chi-noi/" target="_blank" class="view-detail text-red">XEM CHI TIẾT <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/mau-cua-lua.jpg" alt="Cửa Lùa">
-                    </div>
-                    <div class="product-content">
-                        <h3>Cửa Lùa</h3>
-                        <p class="product-tags">Tiện ích - Tối ưu</p>
-                        <a href="https://mivicomposite.vn/san-pham/cua-lua/" target="_blank" class="view-detail text-red">XEM CHI TIẾT <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/mau-cua-vom.jpg" alt="Cửa Vòm">
-                    </div>
-                    <div class="product-content">
-                        <h3>Cửa Vòm</h3>
-                        <p class="product-tags">Mềm mại - Độc đáo</p>
-                        <a href="https://mivicomposite.vn/san-pham/cua-vom/" target="_blank" class="view-detail text-red">XEM CHI TIẾT <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/mau-hoa-van-cnc.jpg" alt="Cửa Soi Huỳnh">
-                    </div>
-                    <div class="product-content">
-                        <h3>Cửa Soi Huỳnh</h3>
-                        <p class="product-tags">Hoa văn - Nghệ thuật</p>
-                        <a href="https://mivicomposite.vn/san-pham/cua-soi-huynh/" target="_blank" class="view-detail text-red">XEM CHI TIẾT <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/mau-o-kinh.jpg" alt="Cửa Ô Kính">
-                    </div>
-                    <div class="product-content">
-                        <h3>Cửa Ô Kính</h3>
-                        <p class="product-tags">Hiện đại - Không gian mở</p>
-                        <a href="https://mivicomposite.vn/san-pham/cua-o-kinh/" target="_blank" class="view-detail text-red">XEM CHI TIẾT <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/mau-o-la-sach.jpg" alt="Cửa Ô Lá Sách">
-                    </div>
-                    <div class="product-content">
-                        <h3>Cửa Ô Lá Sách</h3>
-                        <p class="product-tags">Thoáng khí - Thanh lịch</p>
-                        <a href="https://mivicomposite.vn/san-pham/cua-o-la-sach/" target="_blank" class="view-detail text-red">XEM CHI TIẾT <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/mau-o-fix.jpg" alt="Cửa Ô Fix">
-                    </div>
-                    <div class="product-content">
-                        <h3>Cửa Ô Fix</h3>
-                        <p class="product-tags">Đón sáng - Rộng rãi</p>
-                        <a href="https://mivicomposite.vn/san-pham/cua-o-fix/" target="_blank" class="view-detail text-red">XEM CHI TIẾT <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
+
+            <!-- Phần 2: Vật liệu cao cấp -->
+            <div class="materials-gallery" style="display: none; margin-bottom: 80px;">
+                <h3 class="subsection-title text-center" style="margin-bottom: 40px; font-size: 1.8rem; color: var(--primary-color);">SỬ DỤNG NGUYÊN VẬT LIỆU CAO CẤP</h3>
+                <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                    <div style="aspect-ratio: 4/3; background: #ddd; border-radius: 10px; display: flex; align-items: center; justify-content: center; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);"><img src="https://via.placeholder.com/400x300?text=Vat+lieu+1" alt="Vật liệu 1" style="width: 100%; height: 100%; object-fit: cover;"></div>
+                    <div style="aspect-ratio: 4/3; background: #ddd; border-radius: 10px; display: flex; align-items: center; justify-content: center; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);"><img src="https://via.placeholder.com/400x300?text=Vat+lieu+2" alt="Vật liệu 2" style="width: 100%; height: 100%; object-fit: cover;"></div>
+                    <div style="aspect-ratio: 4/3; background: #ddd; border-radius: 10px; display: flex; align-items: center; justify-content: center; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);"><img src="https://via.placeholder.com/400x300?text=Vat+lieu+3" alt="Vật liệu 3" style="width: 100%; height: 100%; object-fit: cover;"></div>
+                    <div style="aspect-ratio: 4/3; background: #ddd; border-radius: 10px; display: flex; align-items: center; justify-content: center; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);"><img src="https://via.placeholder.com/400x300?text=Vat+lieu+4" alt="Vật liệu 4" style="width: 100%; height: 100%; object-fit: cover;"></div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Technology -->
-    <section class="technology">
-        <div class="container">
-            <div class="tech-wrapper">
-                <div class="tech-left">
-                    <div class="tech-label">CÔNG NGHỆ ĐỨC</div>
-                    <h2 class="tech-title">Chuẩn mực chất lượng<br>toàn cầu</h2>
-                    <p class="tech-description">Dây chuyền sản xuất hiện đại, kiểm soát chất lượng<br>theo tiêu chuẩn Đức, đảm bảo độ chính xác và độ bền<br>vượt trội cho từng sản phẩm.</p>
-                    
-                    <div class="tech-icons-row">
-                        <div class="tech-icon-item">
-                            <i class="fa-solid fa-gears"></i>
-                            <span>Dây chuyền<br>hiện đại</span>
-                        </div>
-                        <div class="tech-divider"></div>
-                        <div class="tech-icon-item">
-                            <i class="fa-solid fa-clipboard-check"></i>
-                            <span>Kiểm soát chất lượng<br>nghiêm ngặt</span>
-                        </div>
-                        <div class="tech-divider"></div>
-                        <div class="tech-icon-item">
-                            <i class="fa-regular fa-gem"></i>
-                            <span>Vật liệu<br>cao cấp</span>
-                        </div>
-                    </div>
-                    <a href="#" class="btn btn-outline-light btn-pill">TÌM HIỂU CÔNG NGHỆ &nbsp;<i class="fa-solid fa-arrow-right-long"></i></a>
+            <!-- Phần 3: Công nghệ & Máy móc -->
+            <div class="production-technology" style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
+                <div class="tech-content" style="flex: 1; min-width: 250px;">
+                    <h3 class="subsection-title" style="margin-bottom: 20px; font-size: 1.5rem;">CÔNG NGHỆ TỪ ĐỨC</h3>
+                    <p style="margin-bottom: 20px; line-height: 1.6; color: var(--text-muted);">Dây chuyền sản xuất hiện đại, kiểm soát chất lượng theo tiêu chuẩn Đức, đảm bảo độ chính xác và độ bền vượt trội cho từng sản phẩm. Đội ngũ thợ lành nghề với tâm huyết đặt vào từng chi tiết, vận hành hệ thống máy móc VIP tại nhà máy để tạo ra những bộ cửa hoàn hảo.</p>
+                    <ul class="tech-list" style="list-style: none; padding: 0; margin-bottom: 25px;">
+                        <li style="margin-bottom: 12px;"><i class="fa-solid fa-circle-check text-red"></i> Tiêu chuẩn chất lượng Đức</li>
+                        <li style="margin-bottom: 12px;"><i class="fa-solid fa-circle-check text-red"></i> Vật liệu nhập khẩu cao cấp</li>
+                        <li style="margin-bottom: 12px;"><i class="fa-solid fa-circle-check text-red"></i> Quy trình sản xuất hiện đại</li>
+                        <li style="margin-bottom: 12px;"><i class="fa-solid fa-circle-check text-red"></i> Kiểm định nghiêm ngặt</li>
+                        <li style="margin-bottom: 12px;"><i class="fa-solid fa-circle-check text-red"></i> Bền đẹp - An toàn - Thân thiện</li>
+                    </ul>
+                    <a href="https://mivicomposite.vn/cong-nghe/" class="btn btn-outline-danger btn-pill">TÌM HIỂU CÔNG NGHỆ &nbsp;<i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
-                <div class="tech-middle">
-                    <div class="video-placeholder">
-                        <img src="images/factory-video.jpg" alt="Nhà máy sản xuất Mividoor">
-                        <div class="play-button"><i class="fa-solid fa-play"></i></div>
-                    </div>
-                </div>
-                <div class="tech-right">
-                    <div class="tech-card">
-                        <div class="tech-card-header">
-                            <svg class="german-flag-icon" width="45" height="30" viewBox="0 0 3 2" style="border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                                <rect width="3" height="2" fill="#FFCE00"/>
-                                <rect width="3" height="1.333" fill="#DD0000"/>
-                                <rect width="3" height="0.666" fill="#000000"/>
-                            </svg>
-                            <div>
-                                <strong>CÔNG NGHỆ</strong>
-                                <strong>TỪ ĐỨC</strong>
-                            </div>
-                        </div>
-                        <ul class="tech-list">
-                            <li><i class="fa-solid fa-circle-check text-red"></i> Tiêu chuẩn chất lượng Đức</li>
-                            <li><i class="fa-solid fa-circle-check text-red"></i> Vật liệu nhập khẩu cao cấp</li>
-                            <li><i class="fa-solid fa-circle-check text-red"></i> Quy trình sản xuất hiện đại</li>
-                            <li><i class="fa-solid fa-circle-check text-red"></i> Kiểm định nghiêm ngặt</li>
-                            <li><i class="fa-solid fa-circle-check text-red"></i> Bền đẹp - An toàn - Thân thiện</li>
-                        </ul>
-                        <!-- Brandenburg Gate watermark -->
-                        <div class="tech-watermark">
-                            <i class="fa-solid fa-award" style="font-size: 80px; color: var(--primary-color); opacity: 0.05;"></i>
-                        </div>
-                    </div>
+                <div class="tech-images" style="flex: 1; min-width: 250px; position: relative;">
+                    <img src="images/factory-video.jpg" alt="Nhà máy Mividoor" style="width: 100%; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); object-fit: cover; aspect-ratio: 4/3;" onerror="this.src='https://via.placeholder.com/800x600?text=Nha+may+Mividoor'">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Structure Section -->
-    <section class="structure">
+    <section class="structure" style="background-color: var(--light-bg); padding: 60px 0;">
         <div class="container">
             <h2 class="section-title text-center">CẤU TẠO CỬA COMPOSITE MIVI</h2>
-            <div class="structure-wrapper text-center" style="margin-top: 50px; display: flex; justify-content: center;">
+            <div class="structure-wrapper text-center" style="margin-top: 50px; display: flex; justify-content: center; margin-bottom: 60px;">
                 <img src="images/cau-tao-cua.png" alt="Cấu tạo cửa Composite" style="max-width: 850px; width: 100%; height: auto;">
             </div>
+
+            <!-- Thông số kỹ thuật -->
+            <h2 class="section-title text-center" style="margin-top: 80px;">THÔNG SỐ KỸ THUẬT</h2>
+            <div class="specs-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px;">
+                <div class="spec-card" style="background: var(--white); padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                    <h3 style="color: var(--primary-color); margin-bottom: 15px; border-bottom: 2px solid var(--danger-color); padding-bottom: 10px; display: inline-block;">KÍCH THƯỚC TIÊU CHUẨN</h3>
+                    <ul style="list-style: none; padding: 0; line-height: 1.8;">
+                        <li><strong>Cửa phòng:</strong> 900 x 2200 mm</li>
+                        <li><strong>Cửa vệ sinh:</strong> 800 x 2100 mm</li>
+                        <li><strong>Độ dày cánh:</strong> 40 mm (± 2mm)</li>
+                    </ul>
+                </div>
+                <div class="spec-card" style="background: var(--white); padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                    <h3 style="color: var(--primary-color); margin-bottom: 15px; border-bottom: 2px solid var(--danger-color); padding-bottom: 10px; display: inline-block;">HỆ KHUNG BAO</h3>
+                    <ul style="list-style: none; padding: 0; line-height: 1.8;">
+                        <li><strong>Khung 90:</strong> Cho tường dày 90-115mm</li>
+                        <li><strong>Khung 100:</strong> Cho tường dày 105-125mm</li>
+                        <li><strong>Khung 120:</strong> Cho tường dày 120-145mm</li>
+                        <li><strong>Khung 200:</strong> Cho tường dày 200-225mm</li>
+                    </ul>
+                </div>
+                <div class="spec-card" style="background: var(--white); padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                    <h3 style="color: var(--primary-color); margin-bottom: 15px; border-bottom: 2px solid var(--danger-color); padding-bottom: 10px; display: inline-block;">NẸP CHỈ L HỆ CÀI</h3>
+                    <ul style="list-style: none; padding: 0; line-height: 1.8;">
+                        <li><strong>Kích thước:</strong> 12 x 55 mm</li>
+                        <li><strong>Đặc điểm:</strong> Có chân cài trực tiếp vào khung bao, giúp che khuyết điểm khe hở giữa tường và khung, dễ dàng tháo lắp chỉnh sửa.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Outstanding Products (formerly Projects) -->
-    <section class="projects">
+    <!-- PVC Mividoor Collection -->
+    <section class="pvc-collection" style="padding: 60px 0;">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">SẢN PHẨM NỔI BẬT</h2>
-                <a href="#cua-composite" class="view-all">Xem tất cả sản phẩm <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-img-wrapper">
-                        <img src="images/mau-cua-phang.jpg" alt="Cửa Phẳng Sang Trọng">
-                    </div>
-                    <div class="project-info">
-                        <strong>Cửa Phẳng Sang Trọng</strong>
-                        <span>Mã: MV-01</span>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img-wrapper">
-                        <img src="images/mau-nep-nhom-inox.jpg" alt="Cửa Nẹp Nhôm Inox">
-                    </div>
-                    <div class="project-info">
-                        <strong>Cửa Nẹp Nhôm Inox</strong>
-                        <span>Mã: MV-02</span>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img-wrapper">
-                        <img src="images/mau-phao-chi-noi.jpg" alt="Cửa Phào Chỉ Nổi">
-                    </div>
-                    <div class="project-info">
-                        <strong>Cửa Phào Chỉ Nổi</strong>
-                        <span>Mã: MV-03</span>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img-wrapper">
-                        <img src="images/mau-cua-vom.jpg" alt="Cửa Vòm Hiện Đại">
-                    </div>
-                    <div class="project-info">
-                        <strong>Cửa Vòm Hiện Đại</strong>
-                        <span>Mã: MV-04</span>
-                    </div>
-                </div>
+            <h2 class="section-title text-center">BẢNG MÀU PVC MIVIDOOR</h2>
+            <div class="title-underline"></div>
+            <p class="text-center" style="margin-bottom: 40px; color: var(--text-muted); font-size: 1.1rem;">Bộ sưu tập 18 màu phim cao cấp, vân gỗ tự nhiên sắc nét</p>
+            
+            <div class="colors-grid" id="pvc-colors-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 15px;">
+                <!-- Dùng JS để render 18 màu -->
             </div>
         </div>
     </section>
 
-    <!-- Compare & Testimonials -->
-    <section class="compare-testimonials">
+    <!-- Sản phẩm (Các loại cửa) -->
+    <section id="san-pham" class="products-section" style="padding: 80px 0; background-color: var(--light-bg);">
         <div class="container">
-            <div class="ct-grid">
-                <!-- Comparison -->
-                <div class="comparison-section">
-                    <h2 class="section-title text-left">SO SÁNH ƯU ĐIỂM<br>COMPOSITE VÀ CÁC LOẠI KHÁC</h2>
-                    <div class="table-responsive">
-                        <table class="compare-table">
-                        <thead>
-                            <tr>
-                                <th>TIÊU CHÍ</th>
-                                <th class="highlight-col">COMPOSITE MIVI</th>
-                                <th>GỖ TỰ NHIÊN</th>
-                                <th>NHỰA ABS</th>
-                                <th>GỖ CÔNG NGHIỆP</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Chống nước</td>
-                                <td class="highlight-col"><i class="fa-solid fa-check text-blue"></i></td>
-                                <td><i class="fa-solid fa-xmark text-red"></i></td>
-                                <td><i class="fa-solid fa-check text-blue"></i></td>
-                                <td><i class="fa-solid fa-xmark text-red"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Chống mối mọt</td>
-                                <td class="highlight-col"><i class="fa-solid fa-check text-blue"></i></td>
-                                <td><i class="fa-solid fa-xmark text-red"></i></td>
-                                <td><i class="fa-solid fa-check text-blue"></i></td>
-                                <td><i class="fa-solid fa-xmark text-red"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Không cong vênh</td>
-                                <td class="highlight-col"><i class="fa-solid fa-check text-blue"></i></td>
-                                <td><i class="fa-solid fa-xmark text-red"></i></td>
-                                <td><i class="fa-solid fa-check text-blue"></i></td>
-                                <td><i class="fa-solid fa-xmark text-red"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Cách âm</td>
-                                <td class="highlight-col"><i class="fa-solid fa-check text-blue"></i></td>
-                                <td><i class="fa-solid fa-check text-blue"></i></td>
-                                <td><i class="fa-solid fa-xmark text-red"></i></td>
-                                <td><i class="fa-solid fa-check text-blue"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Độ bền (năm)</td>
-                                <td class="highlight-col">> 30</td>
-                                <td>10 - 15</td>
-                                <td>3 - 7</td>
-                                <td>5 - 10</td>
-                            </tr>
-                            <tr>
-                                <td>Bảo hành</td>
-                                <td class="highlight-col">10 năm</td>
-                                <td>1 - 3 năm</td>
-                                <td>1 năm</td>
-                                <td>1 - 2 năm</td>
-                            </tr>
-                        </tbody>
-                        </table>
-                    </div>
-                </div>
+            <div class="section-header text-center" style="margin-bottom: 50px;">
+                <h2 class="section-title">SẢN PHẨM</h2>
+                <div class="title-underline"></div>
+            </div>
+            
 
-                <!-- Testimonials -->
-                <div class="testimonials-section">
-                    <div class="section-header" style="margin-bottom: 20px;">
-                        <h2 class="section-title text-left" style="margin: 0;">KHÁCH HÀNG NÓI VỀ MIVI</h2>
-                        <div class="nav-arrows">
-                            <button id="prev-testi"><i class="fa-solid fa-chevron-left"></i></button>
-                            <button id="next-testi"><i class="fa-solid fa-chevron-right"></i></button>
-                        </div>
-                    </div>
-                    <div class="testimonials-slider-container">
-                        <div class="testimonials-grid" id="testimonials-slider">
-                        <div class="testimonial-card">
-                            <div class="stars text-red">
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                            </div>
-                            <p>"Cửa đẹp, chắc chắn, chống nước rất tốt. Dịch vụ tư vấn và lắp đặt chuyên nghiệp."</p>
-                            <div class="customer">
-                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Anh Minh Tuấn">
-                                <div>
-                                    <strong>Anh Minh Tuấn</strong>
-                                    <span>Hà Nội</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-card">
-                            <div class="stars text-red">
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                            </div>
-                            <p>"Tôi rất hài lòng với chất lượng cửa và chính sách bảo hành của MIVI."</p>
-                            <div class="customer">
-                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Chị Hồng Nhung">
-                                <div>
-                                    <strong>Chị Hồng Nhung</strong>
-                                    <span>Hải Phòng</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-card">
-                            <div class="stars text-red">
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                            </div>
-                            <p>"Thiết kế hiện đại, phù hợp với không gian nhà mình. Sẽ giới thiệu cho bạn bè."</p>
-                            <div class="customer">
-                                <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Anh Long">
-                                <div>
-                                    <strong>Anh Long</strong>
-                                    <span>TP. Hồ Chí Minh</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- Closes testimonials-slider-container -->
-            </div> <!-- Closes testimonials-section -->
+            
+            <div class="collection-grid" id="product-grid">
+                <!-- Products will be generated by JS -->
             </div>
         </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="faq-section">
+    <!-- BST MIVIDOOR LUXURY 2026 -->
+    <section id="bst-luxury" class="luxury-collection" style="padding: 80px 0;">
         <div class="container">
-            <h2 class="section-title text-left">CÂU HỎI THƯỜNG GẶP</h2>
-            <div class="faq-grid">
-                <div class="faq-column">
-                    <div class="faq-item">
-                        <div class="faq-question">Cửa composite có chống nước hoàn toàn không? <i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">Bảo hành sản phẩm trong bao lâu? <i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">Thời gian thi công và lắp đặt là bao lâu? <i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                </div>
-                <div class="faq-column">
-                    <div class="faq-item">
-                        <div class="faq-question">Cửa composite có cách âm tốt không? <i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">Có làm được theo kích thước yêu cầu không? <i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">Cửa composite có phù hợp cho cửa chính không? <i class="fa-solid fa-chevron-down"></i></div>
+            <div class="section-header text-center" style="margin-bottom: 50px;">
+                <h2 class="section-title" style="color: #d4af37;">BST MIVIDOOR LUXURY 2026</h2>
+                <p style="margin-top: 15px; font-size: 1.1rem; color: var(--text-muted);">Những tuyệt tác cửa sang trọng bậc nhất trưng bày tại Vietbuild HCM 2026</p>
+            </div>
+            
+            <div class="luxury-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+                <div class="luxury-card" style="position: relative; overflow: hidden; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); background: #fff; height: 100%; display: flex; flex-direction: column;">
+                    <img src="images/luxury-1.png" alt="Luxury Door 1" style="width: 100%; height: 400px; object-fit: contain; display: block; background: #f8f9fa;" onerror="this.src='https://via.placeholder.com/600x800?text=Luxury+Door+1'">
+                    <div class="luxury-info" style="padding: 25px 20px; text-align: center; background: #fff; border-top: 1px solid #eee;">
+                        <h3 style="margin: 0 0 8px 0; color: #d4af37; font-size: 1.3rem;">MIVI-LUX 01</h3>
+                        <p style="margin: 0; font-size: 1rem; color: #555;">Sang trọng, Đẳng cấp</p>
                     </div>
                 </div>
+                <div class="luxury-card" style="position: relative; overflow: hidden; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); background: #fff; height: 100%; display: flex; flex-direction: column;">
+                    <img src="images/luxury-2.png" alt="Luxury Door 2" style="width: 100%; height: 400px; object-fit: contain; display: block; background: #f8f9fa;" onerror="this.src='https://via.placeholder.com/600x800?text=Luxury+Door+2'">
+                    <div class="luxury-info" style="padding: 25px 20px; text-align: center; background: #fff; border-top: 1px solid #eee;">
+                        <h3 style="margin: 0 0 8px 0; color: #d4af37; font-size: 1.3rem;">MIVI-LUX 02</h3>
+                        <p style="margin: 0; font-size: 1rem; color: #555;">Tân cổ điển, Tinh tế</p>
+                    </div>
+                </div>
+                <div class="luxury-card" style="position: relative; overflow: hidden; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); background: #fff; height: 100%; display: flex; flex-direction: column;">
+                    <img src="images/luxury-3.png" alt="Luxury Door 3" style="width: 100%; height: 400px; object-fit: contain; display: block; background: #f8f9fa;" onerror="this.src='https://via.placeholder.com/600x800?text=Luxury+Door+3'">
+                    <div class="luxury-info" style="padding: 25px 20px; text-align: center; background: #fff; border-top: 1px solid #eee;">
+                        <h3 style="margin: 0 0 8px 0; color: #d4af37; font-size: 1.3rem;">MIVI-LUX 03</h3>
+                        <p style="margin: 0; font-size: 1rem; color: #555;">Hiện đại, Phá cách</p>
+                    </div>
+                </div>
+                <div class="luxury-card" style="position: relative; overflow: hidden; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); background: #fff; height: 100%; display: flex; flex-direction: column;">
+                    <img src="images/luxury-4.png" alt="Luxury Door 4" style="width: 100%; height: 400px; object-fit: contain; display: block; background: #f8f9fa;" onerror="this.src='https://via.placeholder.com/600x800?text=Luxury+Door+4'">
+                    <div class="luxury-info" style="padding: 25px 20px; text-align: center; background: #fff; border-top: 1px solid #eee;">
+                        <h3 style="margin: 0 0 8px 0; color: #d4af37; font-size: 1.3rem;">MIVI-LUX 04</h3>
+                        <p style="margin: 0; font-size: 1rem; color: #555;">Vòm cổ điển, Độc đáo</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
-
     <!-- Contact Section -->
     <section class="contact-section" id="contact">
         <div class="container">
@@ -593,7 +387,7 @@
                     <div class="contact-item">
                         <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
                         <div class="c-text">
-                            <h4>VP Đại Diện</h4>
+                            <h4>Showroom HCM</h4>
                             <p>52 Nguyễn Thị Nhung, KĐT Vạn Phúc, Thủ Đức, TP. HCM</p>
                         </div>
                     </div>
@@ -608,7 +402,7 @@
                         <div class="c-icon"><i class="fa-solid fa-headset"></i></div>
                         <div class="c-text">
                             <h4>Hotline liên hệ</h4>
-                            <p>0947 711 116</p>
+                            <p>0943 39 35 39</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -632,7 +426,7 @@
             <div class="cta-content">
                 <div class="cta-icon"><i class="fa-solid fa-phone-volume"></i></div>
                 <div class="cta-text">
-                    <h2>TƯ VẤN MIỄN PHÍ – NHẬN BÁO GIÁ NGAY</h2>
+                    <h2>TƯ VẤN CHÍNH SÁCH ĐẠI LÝ – NHẬN BÁO GIÁ NGAY</h2>
                     <p>Đội ngũ chuyên gia MIVIDOOR luôn sẵn sàng hỗ trợ bạn lựa chọn giải pháp tối ưu.</p>
                 </div>
             </div>
@@ -657,7 +451,7 @@
                     <a href="#" class="logo logo-footer">
                         <img src="logo.png" alt="MIVIDOOR Logo" class="logo-img-footer">
                     </a>
-                    <p>Giải pháp cửa & nội thất composite cao cấp mang thương hiệu MIVIDOOR, mang đến không gian sống bền đẹp, hiện đại và tiện nghi.</p>
+                    <p>Mividor - giải pháp cửa nội thất cao cấp, nâng tầm trải nghiệm không gian sống.</p>
                     <div class="social-links">
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="#"><i class="fa-brands fa-youtube"></i></a>
@@ -668,22 +462,14 @@
                 <div class="footer-col">
                     <h3>VỀ CHÚNG TÔI</h3>
                     <ul>
-                        <li><a href="#">Giới thiệu</a></li>
-                        <li><a href="#">Công nghệ Đức</a></li>
+                        <li><a href="#ve-chung-toi">Giới thiệu</a></li>
+                        <li><a href="#ve-chung-toi">Công nghệ Đức</a></li>
                         <li><a href="#">Tin tức</a></li>
                         <li><a href="#">Tuyển dụng</a></li>
-                        <li><a href="#">Liên hệ</a></li>
+                        <li><a href="#contact">Liên hệ</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h3>SẢN PHẨM</h3>
-                    <ul>
-                        <li><a href="#">Cửa Composite</a></li>
-                        <li><a href="#">Ván ốp tường</a></li>
-                        <li><a href="#">Phụ kiện</a></li>
-                        <li><a href="#">Bộ sưu tập</a></li>
-                    </ul>
-                </div>
+
                 <div class="footer-col">
                     <h3>HỖ TRỢ</h3>
                     <ul>
@@ -696,9 +482,9 @@
                 <div class="footer-col contact-col">
                     <h3>LIÊN HỆ</h3>
                     <ul>
-                        <li><i class="fa-solid fa-location-dot"></i> VPĐD: 52 Nguyễn Thị Nhung, KĐT Vạn Phúc, Thủ Đức, TP. HCM</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Showroom HCM: 52 Nguyễn Thị Nhung, KĐT Vạn Phúc, Thủ Đức, TP. HCM</li>
                         <li><i class="fa-solid fa-warehouse"></i> Nhà máy: A1-10 đường số 2, KDC Miền Nam, Hưng Phú, Cần Thơ</li>
-                        <li><i class="fa-solid fa-headset"></i> Hotline: 0947 711 116</li>
+                        <li><i class="fa-solid fa-headset"></i> Hotline: 0943 39 35 39</li>
                         <li><i class="fa-solid fa-paper-plane"></i> Email: mivicompositevn@gmail.com</li>
                     </ul>
                 </div>
@@ -708,7 +494,7 @@
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js?v=3"></script>
     <script>
         let currentSlide = 0;
         const slides = document.querySelectorAll('.hero-bg-slide');
@@ -801,6 +587,38 @@
         openSidebarBtn.addEventListener('click', openMenu);
         closeSidebarBtn.addEventListener('click', closeMenu);
         sidebarBackdrop.addEventListener('click', closeMenu);
+        sidebarBackdrop.addEventListener('click', closeMenu);
+
+        // Contact Modal Logic
+        function openContactModal(e) {
+            e.preventDefault();
+            document.getElementById('contactModal').style.display = 'flex';
+            setTimeout(() => {
+                document.getElementById('contactModal').style.opacity = '1';
+            }, 10);
+        }
+        function closeContactModal() {
+            document.getElementById('contactModal').style.opacity = '0';
+            setTimeout(() => {
+                document.getElementById('contactModal').style.display = 'none';
+            }, 300);
+        }
     </script>
+    
+    <!-- Contact Modal -->
+    <div id="contactModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 9999; justify-content: center; align-items: center; opacity: 0; transition: opacity 0.3s ease;">
+        <div style="background: white; padding: 30px; border-radius: 15px; width: 90%; max-width: 400px; text-align: center; position: relative;">
+            <button onclick="closeContactModal()" style="position: absolute; top: 15px; right: 15px; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: #888;">&times;</button>
+            <h3 style="margin-bottom: 25px; color: var(--primary-color);">Kết nối với chúng tôi</h3>
+            <div style="display: flex; flex-direction: column; gap: 15px;">
+                <a href="https://zalo.me/0943393539" target="_blank" class="btn" style="background-color: #0068FF; color: white; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 15px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Icon_of_Zalo.svg/1024px-Icon_of_Zalo.svg.png" style="width: 24px; height: 24px;"> Chat Zalo
+                </a>
+                <a href="tel:0943393539" class="btn btn-danger" style="display: flex; align-items: center; justify-content: center; gap: 10px; padding: 15px;">
+                    <i class="fa-solid fa-phone"></i> Gọi Hotline (0943 39 35 39)
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
