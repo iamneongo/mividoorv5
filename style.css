@@ -7,6 +7,8 @@
     --border-color: #E0E0E0;
     --white: #FFFFFF;
     --container-width: 1400px;
+    --font-heading: 'Inter Tight', sans-serif;
+    --font-body: 'Inter Tight', sans-serif;
 }
 
 * {
@@ -16,10 +18,15 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-body);
     color: var(--text-main);
     line-height: 1.6;
     overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .section-title, .hero-title {
+    font-family: var(--font-heading);
+    text-wrap: balance;
 }
 
 button, input, select, textarea {
@@ -72,10 +79,11 @@ ul {
 }
 
 .title-underline {
-    height: 3px;
-    width: 60px;
-    background-color: var(--accent-color);
-    margin: 0 auto 40px auto;
+    height: 2px;
+    width: 40px;
+    background-color: var(--primary-color);
+    opacity: 0.3;
+    margin: 0 auto 50px auto;
 }
 
 .view-all {
@@ -228,9 +236,10 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    background-position: right bottom;
-    background-size: cover;
+    background-position: right center;
+    background-size: contain;
     background-repeat: no-repeat;
+    background-color: var(--white);
     opacity: 0;
     transition: opacity 1s ease-in-out;
     display: flex;
@@ -349,6 +358,31 @@ ul {
     background-color: var(--accent-color);
 }
 
+/* Craftsmanship */
+.craftsmanship {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--primary-color);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(43, 57, 144, 0.1);
+}
+.craft-img {
+    flex: 1;
+    min-width: 300px;
+    max-height: 380px;
+}
+.craft-text {
+    flex: 1;
+    min-width: 300px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--white);
+}
+
 /* Stats */
 .stats {
     padding: 0;
@@ -407,7 +441,7 @@ ul {
     text-align: left;
     padding: 30px;
     background: var(--white);
-    border-radius: 16px;
+    border-radius: 12px;
     border: 1px solid rgba(43, 57, 144, 0.08);
     box-shadow: 0 4px 20px rgba(0,0,0,0.03);
     position: relative;
@@ -955,7 +989,7 @@ ul {
     border: 1px solid #f0f0f0;
     box-sizing: border-box;
 }
-}
+
 .stars {
     margin-bottom: 15px;
     font-size: 0.9rem;
@@ -1220,7 +1254,7 @@ ul {
 }
 .footer-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr;
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
     gap: 40px;
     margin-bottom: 60px;
 }
@@ -1315,6 +1349,28 @@ ul {
     opacity: 0.25;
 }
 
+/* ----- Polish Utilities (taste-skill) ----- */
+.pattern-grid {
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, rgba(43, 57, 144, 0.03) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(43, 57, 144, 0.03) 1px, transparent 1px);
+}
+
+.animate-fade-up {
+    animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUp {
+    0% { opacity: 0; transform: translateY(24px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(43, 57, 144, 0.15) !important;
+}
+
 /* ------------------------------------- */
 /* RESPONSIVE DESIGN                     */
 /* ------------------------------------- */
@@ -1363,6 +1419,8 @@ ul {
 }
 
 @media (max-width: 768px) {
+    .craftsmanship { max-height: none; }
+    .craft-img { max-height: 250px; }
     /* Header & Navigation */
     .nav { display: none !important; }
     .header-contact { display: none !important; }
