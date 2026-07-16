@@ -22,6 +22,10 @@ body {
     overflow-x: hidden;
 }
 
+button, input, select, textarea {
+    font-family: inherit;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -1008,17 +1012,20 @@ ul {
     transition: all 0.3s ease;
 }
 .tab-btn.active, .tab-btn:hover {
-    background: var(--danger-color);
+    background: var(--primary-color);
     color: var(--white);
-    border-color: var(--danger-color);
+    border-color: var(--primary-color);
 }
 .collection-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
     transition: opacity 0.2s ease-in-out;
 }
 .product-card {
+    width: 320px;
+    max-width: 100%;
     background: var(--white);
     border-radius: 12px;
     overflow: hidden;
@@ -1290,6 +1297,24 @@ ul {
     margin-bottom: 20px;
 }
 
+/* Process Steps Line */
+.process-steps {
+    position: relative;
+    z-index: 1;
+}
+.process-steps::before {
+    content: '';
+    position: absolute;
+    top: 34px;
+    left: 10%;
+    right: 10%;
+    height: 0;
+    border-top: 3px dashed var(--primary-color);
+    background: transparent;
+    z-index: -1;
+    opacity: 0.25;
+}
+
 /* ------------------------------------- */
 /* RESPONSIVE DESIGN                     */
 /* ------------------------------------- */
@@ -1316,6 +1341,7 @@ ul {
     .reasons-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
     .collection-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
     .projects-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .process-steps::before { display: none; }
     
     /* Tech section */
     .tech-wrapper { grid-template-columns: 1fr; border-radius: 0; }
