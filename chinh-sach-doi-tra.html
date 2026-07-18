@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chính Sách Đổi Trả - MIVIDOOR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css?v=5">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" style="background: var(--white); border-bottom: 1px solid #f0f0f0;">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="MIVIDOOR Logo" class="logo-img">
+            </a>
+                        <nav class="nav">
+                <ul>
+                    <li><a href="index.html">TRANG CHỦ</a></li>
+                    <li><a href="ve-chung-toi.html">VỀ CHÚNG TÔI</a></li>
+                    <li><a href="san-pham.html">SẢN PHẨM</a></li>
+                    <li><a href="bst-luxury.html">BST MIVIDOOR LUXURY</a></li>
+                    <li><a href="lien-he.html">LIÊN HỆ</a></li>
+                </ul>
+            </nav>
+            <div class="header-contact">
+                <a href="tel:0943393539" class="btn btn-outline-danger btn-pill">
+                    <i class="fa-solid fa-phone"></i> 0943 39 35 39
+                </a>
+            </div>
+            <button class="mobile-menu-btn" id="openSidebar" style="display: none; background: none; border: none; cursor: pointer; padding: 5px; color: var(--primary-color);">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar-backdrop" id="sidebarBackdrop" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 1999; opacity: 0; visibility: hidden; transition: all 0.3s ease;"></div>
+    <div class="mobile-sidebar" id="mobileSidebar" style="position: fixed; top: 0; left: -300px; width: 300px; height: 100%; background-color: var(--white); z-index: 2000; box-shadow: 5px 0 25px rgba(0,0,0,0.15); display: flex; flex-direction: column; transition: left 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); padding: 25px; box-sizing: border-box;">
+        <div class="sidebar-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 45px;">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="MIVIDOOR Logo" class="logo-img" style="height: 35px; width: auto; object-fit: contain;">
+            </a>
+            <button class="close-sidebar-btn" id="closeSidebar" style="background: none; border: none; cursor: pointer; padding: 5px; color: var(--text-main); display: flex; align-items: center; justify-content: center;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+                <nav class="sidebar-nav">
+            <ul style="list-style: none; padding: 0; margin: 0;">
+                <li style="margin-bottom: 25px;"><a href="index.html" onclick="closeMenu()" style="font-size: 1.1rem; font-weight: 600; color: var(--text-main); text-decoration: none; text-transform: uppercase; display: block;">TRANG CHỦ</a></li>
+                <li style="margin-bottom: 25px;"><a href="ve-chung-toi.html" onclick="closeMenu()" style="font-size: 1.1rem; font-weight: 600; color: var(--text-main); text-decoration: none; text-transform: uppercase; display: block;">VỀ CHÚNG TÔI</a></li>
+                <li style="margin-bottom: 25px;"><a href="san-pham.html" onclick="closeMenu()" style="font-size: 1.1rem; font-weight: 600; color: var(--text-main); text-decoration: none; text-transform: uppercase; display: block;">SẢN PHẨM</a></li>
+                <li style="margin-bottom: 25px;"><a href="bst-luxury.html" onclick="closeMenu()" style="font-size: 1.1rem; font-weight: 600; color: var(--text-main); text-decoration: none; text-transform: uppercase; display: block;">BST MIVIDOOR LUXURY</a></li>
+                <li style="margin-bottom: 25px;"><a href="lien-he.html" onclick="closeMenu()" style="font-size: 1.1rem; font-weight: 600; color: var(--text-main); text-decoration: none; text-transform: uppercase; display: block;">LIÊN HỆ</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Page Content -->
+        <div class="premium-page-header" style="background-image: url('images/hero2-new.webp');">
+        <div class="container">
+            <h1>Chính Sách Đổi Trả</h1>
+            <p>Quy trình đổi trả minh bạch, đảm bảo quyền lợi tối đa cho khách hàng của MIVIDOOR.</p>
+        </div>
+    </div>
+
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="policy-container">
+                <div class="policy-content">
+                    <div class="highlight-box">
+                        <p>MIVIDOOR áp dụng chính sách 1 ĐỔI 1 MIỄN PHÍ trong vòng 7 ngày đầu tiên kể từ ngày bàn giao nếu phát hiện lỗi từ nhà sản xuất, giúp Quý khách hoàn toàn an tâm khi sử dụng sản phẩm.</p>
+                    </div>
+
+                    <h2 style="margin-top: 0;"><i class="fa-solid fa-arrows-rotate"></i> 1. Điều kiện áp dụng đổi trả</h2>
+                    <p>Sản phẩm được xem xét đổi trả khi thỏa mãn đầy đủ các điều kiện sau:</p>
+                    <ul>
+                        <li>Sản phẩm còn nguyên trạng, không bị trầy xước bề mặt, không bị vỡ do tác động từ phía khách hàng sau khi đã ký biên bản bàn giao.</li>
+                        <li>Sản phẩm được xác định là lỗi do quy trình sản xuất hoặc lỗi lắp đặt từ phía kỹ thuật viên của MIVIDOOR.</li>
+                        <li>Sản phẩm giao không đúng kích thước, mã màu, mẫu mã so với hợp đồng đã ký kết.</li>
+                        <li>Có đầy đủ chứng từ kèm theo như: Hóa đơn mua hàng, phiếu xuất kho, phiếu bảo hành.</li>
+                    </ul>
+
+                    <h2><i class="fa-solid fa-ban"></i> 2. Các trường hợp từ chối đổi trả</h2>
+                    <ul>
+                        <li>Khách hàng muốn thay đổi mẫu mã, màu sắc sau khi sản phẩm đã được sản xuất xong hoặc đã lắp đặt hoàn thiện.</li>
+                        <li>Sản phẩm bị lỗi hỏng do khách hàng sử dụng sai cách hoặc bị tác động lực mạnh làm biến dạng.</li>
+                        <li>Quá thời hạn 7 ngày kể từ ngày bàn giao, sản phẩm sẽ được chuyển sang quy trình bảo hành chứ không áp dụng đổi trả mới.</li>
+                    </ul>
+
+                    <h2><i class="fa-solid fa-truck-fast"></i> 3. Thời gian và chi phí đổi trả</h2>
+                    <p><strong>Về thời gian:</strong></p>
+                    <ul>
+                        <li>Thời gian tiếp nhận và xử lý yêu cầu: Từ 1-2 ngày làm việc.</li>
+                        <li>Thời gian sản xuất lại và giao hàng đổi trả: Từ 5-7 ngày làm việc (tuỳ thuộc vào tình trạng phôi cửa và lịch trình sản xuất).</li>
+                    </ul>
+                    <p><strong>Về chi phí:</strong></p>
+                    <ul>
+                        <li>MIVIDOOR chịu 100% chi phí vận chuyển, tháo dỡ và lắp đặt lại đối với sản phẩm đổi trả do lỗi từ nhà sản xuất.</li>
+                        <li>Trong trường hợp khách hàng muốn đổi sản phẩm khác cao cấp hơn (nếu chưa lắp đặt), khách hàng sẽ thanh toán phần chênh lệch giá trị sản phẩm và chi phí vận chuyển phát sinh (nếu có).</li>
+                    </ul>
+
+                    <p style="margin-top: 40px; text-align: center; font-style: italic; color: #888;">Cập nhật lần cuối: Tháng 07/2026</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <a href="index.html" class="logo logo-footer">
+                        <img src="logo.png" alt="MIVIDOOR Logo" class="logo-img-footer">
+                    </a>
+                    <p>Mividoor - giải pháp cửa nội thất cao cấp, nâng tầm trải nghiệm không gian sống.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>VỀ CHÚNG TÔI</h3>
+                    <ul>
+                        <li><a href="ve-chung-toi.html">Giới thiệu</a></li>
+                        <li><a href="san-pham.html">Sản phẩm</a></li>
+                        <li><a href="tin-tuc.html">Tin tức</a></li>
+                        <li><a href="tuyen-dung.html">Tuyển dụng</a></li>
+                        <li><a href="lien-he.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>HỖ TRỢ</h3>
+                    <ul>
+                        <li><a href="huong-dan-lap-dat.html">Hướng dẫn lắp đặt</a></li>
+                        <li><a href="chinh-sach-bao-hanh.html">Chính sách bảo hành</a></li>
+                        <li><a href="chinh-sach-doi-tra.html">Chính sách đổi trả</a></li>
+                        <li><a href="dieu-khoan-su-dung.html">Điều khoản sử dụng</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col contact-col">
+                    <h3>LIÊN HỆ</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i> Showroom HCM: 52 Nguyễn Thị Nhung, KĐT Vạn Phúc, Thủ Đức, TP. HCM</li>
+                        <li><i class="fa-solid fa-warehouse"></i> Nhà máy: A1-10 đường số 2, KDC Miền Nam, Hưng Phú, Cần Thơ</li>
+                        <li><i class="fa-solid fa-headset"></i> Hotline: 0943 39 35 39</li>
+                        <li><i class="fa-solid fa-paper-plane"></i> Email: mivicompositevn@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 MIVIDOOR. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+        </div>
+    
+    <script>
+        // Mobile Sidebar Navigation Logic
+        const mobileSidebar = document.getElementById('mobileSidebar');
+        const sidebarBackdrop = document.getElementById('sidebarBackdrop');
+        const openSidebarBtn = document.getElementById('openSidebar');
+        const closeSidebarBtn = document.getElementById('closeSidebar');
+
+        function openMenu() {
+            mobileSidebar.style.left = '0';
+            sidebarBackdrop.style.visibility = 'visible';
+            sidebarBackdrop.style.opacity = '1';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMenu() {
+            mobileSidebar.style.left = '-300px';
+            sidebarBackdrop.style.opacity = '0';
+            setTimeout(() => {
+                if (sidebarBackdrop.style.opacity === '0') {
+                    sidebarBackdrop.style.visibility = 'hidden';
+                }
+            }, 300);
+            document.body.style.overflow = '';
+        }
+
+        if(openSidebarBtn) openSidebarBtn.addEventListener('click', openMenu);
+        if(closeSidebarBtn) closeSidebarBtn.addEventListener('click', closeMenu);
+        if(sidebarBackdrop) sidebarBackdrop.addEventListener('click', closeMenu);
+
+        // Contact Modal Logic
+        , 300);
+        }
+    </script>
+</body>
+</html>

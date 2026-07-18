@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIVIDOOR - Cửa MIVICOMPOSITE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css?v=5">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="MIVIDOOR Logo" class="logo-img">
+            </a>
+                        <nav class="nav">
+                <ul>
+                    <li><a href="index.html">TRANG CHỦ</a></li>
+                    <li><a href="ve-chung-toi.html">VỀ CHÚNG TÔI</a></li>
+                    <li><a href="san-pham.html" class="active">SẢN PHẨM</a></li>
+                    <li><a href="bst-luxury.html">BST MIVIDOOR LUXURY</a></li>
+                    <li><a href="lien-he.html">LIÊN HỆ</a></li>
+                </ul>
+            </nav>
+            <div class="header-contact">
+                <a href="tel:0943393539" class="btn btn-outline-danger btn-pill">
+                    <i class="fa-solid fa-phone"></i> 0943 39 35 39
+                </a>
+            </div>
+            <button class="mobile-menu-btn" id="openSidebar" style="display: none; background: none; border: none; cursor: pointer; padding: 5px; color: var(--primary-color);">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Sidebar Menu -->
+    <div class="mobile-sidebar-backdrop" id="sidebarBackdrop" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 1999; opacity: 0; visibility: hidden; transition: all 0.3s ease;"></div>
+    <div class="mobile-sidebar" id="mobileSidebar" style="position: fixed; top: 0; left: -300px; width: 300px; height: 100%; background-color: var(--white); z-index: 2000; box-shadow: 5px 0 25px rgba(0,0,0,0.15); display: flex; flex-direction: column; transition: left 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); padding: 25px; box-sizing: border-box;">
+        <div class="sidebar-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 45px;">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="MIVIDOOR Logo" class="logo-img" style="height: 35px; width: auto; object-fit: contain;">
+            </a>
+            <button class="close-sidebar-btn" id="closeSidebar" style="background: none; border: none; cursor: pointer; padding: 5px; color: var(--text-main); display: flex; align-items: center; justify-content: center;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+                <nav class="sidebar-nav">
+            <ul style="list-style: none; padding: 0; margin: 0;">
+                <li style="margin-bottom: 25px;"><a href="index.html" onclick="closeMenu()" style="font-size: 1.1rem; font-weight: 600; color: var(--text-main); text-decoration: none; text-transform: uppercase; display: block;">TRANG CHỦ</a></li>
+                <li style="margin-bottom: 25px;"><a href="ve-chung-toi.html" onclick="closeMenu()" style="font-size: 1.1rem; font-weight: 600; color: var(--text-main); text-decoration: none; text-transform: uppercase; display: block;">VỀ CHÚNG TÔI</a></li>
+                <li style="margin-bottom: 25px;"><a href="san-pham.html" class="active" onclick="closeMenu()" style="font-size: 1.1rem; font-weight: 600; color: var(--text-main); text-decoration: none; text-transform: uppercase; display: block;">SẢN PHẨM</a></li>
+                <li style="margin-bottom: 25px;"><a href="bst-luxury.html" onclick="closeMenu()" style="font-size: 1.1rem; font-weight: 600; color: var(--text-main); text-decoration: none; text-transform: uppercase; display: block;">BST MIVIDOOR LUXURY</a></li>
+                <li style="margin-bottom: 25px;"><a href="lien-he.html" onclick="closeMenu()" style="font-size: 1.1rem; font-weight: 600; color: var(--text-main); text-decoration: none; text-transform: uppercase; display: block;">LIÊN HỆ</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer" style="margin-top: auto; padding-top: 20px; border-top: 1px solid #eee;">
+            <a href="tel:0943393539" class="btn btn-danger btn-pill w-100 text-center" style="display: block; box-sizing: border-box; text-decoration: none;">
+                <i class="fa-solid fa-phone"></i> 0943 39 35 39
+            </a>
+        </div>
+    </div>
+
+        <div class="premium-page-header" style="background-image: url('images/hero2-new.webp');">
+        <div class="container">
+            <h1>Danh Mục Sản Phẩm</h1>
+            <p>Đa dạng mẫu mã, đáp ứng mọi nhu cầu thiết kế của không gian sống.</p>
+        </div>
+    </div>
+    <!-- Sản phẩm (Các loại cửa) -->
+    <section id="san-pham" class="products-section" style="padding: 100px 0; background-color: var(--light-bg);">
+        <div class="container">
+            
+            
+            <!-- Category Tabs -->
+            <div class="category-tabs text-center" style="margin-bottom: 40px; display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+                <button class="btn btn-outline-primary tab-btn active" style="border-radius: 30px; padding: 10px 25px; font-weight: 600;" onclick="filterProducts(event, 'all')">TẤT CẢ</button>
+                <button class="btn btn-outline-primary tab-btn" style="border-radius: 30px; padding: 10px 25px; font-weight: 600;" onclick="filterProducts(event, 'cua-phang')">CỬA PHẲNG</button>
+                <button class="btn btn-outline-primary tab-btn" style="border-radius: 30px; padding: 10px 25px; font-weight: 600;" onclick="filterProducts(event, 'cua-phao-chi')">CỬA PHÀO CHỈ</button>
+                <button class="btn btn-outline-primary tab-btn" style="border-radius: 30px; padding: 10px 25px; font-weight: 600;" onclick="filterProducts(event, 'cua-cnc')">CỬA CNC</button>
+                <button class="btn btn-outline-primary tab-btn" style="border-radius: 30px; padding: 10px 25px; font-weight: 600;" onclick="filterProducts(event, 'cua-o-kinh')">CỬA Ô KÍNH / LÁ SÁCH</button>
+            </div>
+            <div class="collection-grid" id="product-grid">
+                <!-- Products will be generated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <a href="index.html" class="logo logo-footer">
+                        <img src="logo.png" alt="MIVIDOOR Logo" class="logo-img-footer">
+                    </a>
+                    <p>Mividor - giải pháp cửa nội thất cao cấp, nâng tầm trải nghiệm không gian sống.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>VỀ CHÚNG TÔI</h3>
+                    <ul>
+                        <li><a href="ve-chung-toi.html">Giới thiệu</a></li>
+                        <li><a href="san-pham.html">Sản phẩm</a></li>
+                        <li><a href="tin-tuc.html">Tin tức</a></li>
+                        <li><a href="tuyen-dung.html">Tuyển dụng</a></li>
+                        <li><a href="lien-he.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>HỖ TRỢ</h3>
+                    <ul>
+                        <li><a href="huong-dan-lap-dat.html">Hướng dẫn lắp đặt</a></li>
+                        <li><a href="chinh-sach-bao-hanh.html">Chính sách bảo hành</a></li>
+                        <li><a href="chinh-sach-doi-tra.html">Chính sách đổi trả</a></li>
+                        <li><a href="dieu-khoan-su-dung.html">Điều khoản sử dụng</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col contact-col">
+                    <h3>LIÊN HỆ</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i> Showroom HCM: 52 Nguyễn Thị Nhung, KĐT Vạn Phúc, Thủ Đức, TP. HCM</li>
+                        <li><i class="fa-solid fa-warehouse"></i> Nhà máy: A1-10 đường số 2, KDC Miền Nam, Hưng Phú, Cần Thơ</li>
+                        <li><i class="fa-solid fa-headset"></i> Hotline: 0943 39 35 39</li>
+                        <li><i class="fa-solid fa-paper-plane"></i> Email: mivicompositevn@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 MIVIDOOR. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js?v=3"></script>
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.hero-bg-slide');
+        const dots = document.querySelectorAll('.hero-pagination .dot');
+
+        function goToSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            dots[currentSlide].classList.remove('active');
+            
+            currentSlide = index;
+            
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+
+        setInterval(() => {
+            let next = (currentSlide + 1) % slides.length;
+            goToSlide(next);
+        }, 5000);
+
+        // Testimonials Carousel
+        let currentTestiSlide = 0;
+        const testiSlider = document.getElementById('testimonials-slider');
+        const testiCards = document.querySelectorAll('.testimonial-card');
+        const prevBtn = document.getElementById('prev-testi');
+        const nextBtn = document.getElementById('next-testi');
+
+        function updateTestiSlider() {
+            if (testiCards.length === 0) return;
+            const cardWidth = testiCards[0].getBoundingClientRect().width;
+            const gap = 20; // gap from CSS
+            testiSlider.style.transform = `translateX(-${currentTestiSlide * (cardWidth + gap)}px)`;
+        }
+
+        function getMaxSlides() {
+            // If desktop (width > 768px), we show 2.5 cards (meaning we slide up to card index = length - 2)
+            // Or if we show 2.5 cards, we can slide up to card index = length - 2 (since last card will be partially visible or fully visible)
+            // Let's allow sliding to all card positions except where we run out of cards
+            return window.innerWidth > 768 ? testiCards.length - 2 : testiCards.length - 1;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            const maxSlides = getMaxSlides();
+            if (currentTestiSlide < maxSlides) {
+                currentTestiSlide++;
+            } else {
+                currentTestiSlide = 0;
+            }
+            updateTestiSlider();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (currentTestiSlide > 0) {
+                currentTestiSlide--;
+            } else {
+                currentTestiSlide = getMaxSlides();
+            }
+            updateTestiSlider();
+        });
+
+        window.addEventListener('resize', () => {
+            currentTestiSlide = 0;
+            testiSlider.style.transform = 'translateX(0)';
+        });
+
+        // Mobile Sidebar Navigation Logic
+        const mobileSidebar = document.getElementById('mobileSidebar');
+        const sidebarBackdrop = document.getElementById('sidebarBackdrop');
+        const openSidebarBtn = document.getElementById('openSidebar');
+        const closeSidebarBtn = document.getElementById('closeSidebar');
+
+        function openMenu() {
+            mobileSidebar.style.left = '0';
+            sidebarBackdrop.style.visibility = 'visible';
+            sidebarBackdrop.style.opacity = '1';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMenu() {
+            mobileSidebar.style.left = '-300px';
+            sidebarBackdrop.style.opacity = '0';
+            setTimeout(() => {
+                if (sidebarBackdrop.style.opacity === '0') {
+                    sidebarBackdrop.style.visibility = 'hidden';
+                }
+            }, 300);
+            document.body.style.overflow = '';
+        }
+
+        openSidebarBtn.addEventListener('click', openMenu);
+        closeSidebarBtn.addEventListener('click', closeMenu);
+        sidebarBackdrop.addEventListener('click', closeMenu);
+        sidebarBackdrop.addEventListener('click', closeMenu);
+
+        // Contact Modal Logic
+        , 300);
+        }
+    </script>
+    
+        </div>
+</body>
+</html>
