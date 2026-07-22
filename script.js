@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
             { code: 'M-01', img: 'images/mamauu/298cb06f5192d0cc8983.jpg' },
             { code: 'M-02', img: 'images/mamauu/2d2bfdd41c299d77c438.jpg' },
             { code: 'M-03', img: 'images/mamauu/ef061ae4fb197a472308.jpg' },
-            { code: 'M-04', img: 'https://via.placeholder.com/300?text=M-04' },
+            { code: 'M-04', img: 'images/mamauu/m04.jpg' },
             { code: 'M-05', img: 'images/mamauu/6bb4095ee8a369fd30b2.jpg' },
             { code: 'M-06', img: 'images/mamauu/e97cf39a12679339ca76.jpg' },
             { code: 'M-07', img: 'images/mamauu/744cffb11e4c9f12c65d.jpg' },
@@ -72,12 +72,12 @@ document.addEventListener('DOMContentLoaded', () => {
             { code: 'M-10', img: 'images/mamauu/774a59a8b855390b6044.jpg' },
             { code: 'M-11', img: 'images/mamauu/2c8d9a1d7be0fabea3f1.jpg' },
             { code: 'M-12', img: 'images/mamauu/c25d2ebfcf424e1c1753.jpg' },
-            { code: 'M-13', img: 'https://via.placeholder.com/300?text=M-13' },
+            { code: 'M-13', img: 'images/mamauu/m13.jpg' },
             { code: 'M-14', img: 'images/mamauu/1de54807a9fa28a471eb.jpg' },
             { code: 'M-15 mới', img: 'images/mamauu/113c94df7522f47cad33.jpg' },
             { code: 'M-16', img: 'images/mamauu/edf75714b6e937b76ef8.jpg' },
-            { code: 'M-17', img: 'https://via.placeholder.com/300?text=M-17' },
-            { code: 'M-18', img: 'https://via.placeholder.com/300?text=M-18' }
+            { code: 'M-17', img: 'images/mamauu/m17.jpg' },
+            { code: 'M-18', img: 'images/mamauu/m18.jpg' }
         ];
         
         let html = '';
