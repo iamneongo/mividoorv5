@@ -615,24 +615,28 @@
             return window.innerWidth > 768 ? testiCards.length - 2 : testiCards.length - 1;
         }
 
-        nextBtn.addEventListener('click', () => {
-            const maxSlides = getMaxSlides();
-            if (currentTestiSlide < maxSlides) {
-                currentTestiSlide++;
-            } else {
-                currentTestiSlide = 0;
-            }
-            updateTestiSlider();
-        });
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                const maxSlides = getMaxSlides();
+                if (currentTestiSlide < maxSlides) {
+                    currentTestiSlide++;
+                } else {
+                    currentTestiSlide = 0;
+                }
+                updateTestiSlider();
+            });
+        }
 
-        prevBtn.addEventListener('click', () => {
-            if (currentTestiSlide > 0) {
-                currentTestiSlide--;
-            } else {
-                currentTestiSlide = getMaxSlides();
-            }
-            updateTestiSlider();
-        });
+        if (prevBtn) {
+            prevBtn.addEventListener('click', () => {
+                if (currentTestiSlide > 0) {
+                    currentTestiSlide--;
+                } else {
+                    currentTestiSlide = getMaxSlides();
+                }
+                updateTestiSlider();
+            });
+        }
 
         window.addEventListener('resize', () => {
             currentTestiSlide = 0;
