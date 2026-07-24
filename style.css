@@ -108,6 +108,8 @@ ul {
 
 /* Buttons */
 .btn {
+    font-size: 1rem !important;
+    text-transform: none !important;
     display: inline-flex;
     align-items: center;
     justify-content: center;
