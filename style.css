@@ -1466,14 +1466,17 @@ ul {
     }
 }
 
-/* Gallery Grid Bento */
+/* Gallery Grid */
 .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 }
 .material-card {
+    flex: 0 0 calc(33.333% - 14px);
+    max-width: calc(33.333% - 14px);
+    aspect-ratio: 4/3;
     position: relative;
     border-radius: 20px;
     overflow: hidden;
@@ -1511,9 +1514,6 @@ ul {
     line-height: 1.4;
     letter-spacing: 0.5px;
 }
-.material-card.large {
-    grid-column: span 2;
-}
 
 @media (max-width: 1024px) {
     .container {
@@ -1548,12 +1548,9 @@ ul {
     .craftsmanship { max-height: none; }
     .tech-images { min-height: 400px; }
     
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 240px;
-    }
-    .material-card.large {
-        grid-column: span 2;
+    .material-card {
+        flex: 0 0 calc(50% - 10px);
+        max-width: calc(50% - 10px);
     }
     
     /* Header & Navigation */
@@ -1570,12 +1567,9 @@ ul {
     /* Hero Section */
     .hero { padding: 0; height: 780px !important; min-height: 780px !important; max-height: none !important; display: flex; flex-direction: column; justify-content: flex-start; background: #fff; }
     
-    .gallery-grid {
-        grid-template-columns: 1fr;
-        grid-auto-rows: 220px;
-    }
-    .material-card.large {
-        grid-column: span 1;
+    .material-card {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
     .hero-container { padding-top: 60vw; padding-bottom: 40px; } /* Push text below the image */
     .hero-title { font-size: 2.2rem; }
