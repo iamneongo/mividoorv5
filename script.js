@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const slides = document.querySelectorAll('.hero-bg-slide');
     const dots = document.querySelectorAll('.hero-pagination .dot');
 
-    function goToSlide(index) {
+    window.goToSlide = function(index) {
         if (!slides.length) return;
         slides[currentSlide].classList.remove('active');
         if (dots.length > currentSlide) dots[currentSlide].classList.remove('active');
@@ -211,13 +211,55 @@ document.addEventListener('DOMContentLoaded', () => {
         
         slides[currentSlide].classList.add('active');
         if (dots.length > currentSlide) dots[currentSlide].classList.add('active');
-    }
+    };
 
     if (slides.length > 0) {
         setInterval(() => {
             let next = (currentSlide + 1) % slides.length;
-            goToSlide(next);
+            window.goToSlide(next);
         }, 5000);
+
+        // Add drag/swipe logic
+        const hero = document.querySelector('.hero');
+        let startX = 0;
+        let isDragging = false;
+
+        hero.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+            isDragging = true;
+        }, {passive: true});
+
+        hero.addEventListener('touchend', (e) => {
+            if (!isDragging) return;
+            isDragging = false;
+            let endX = e.changedTouches[0].clientX;
+            let diff = startX - endX;
+            if (diff > 50) {
+                window.goToSlide((currentSlide + 1) % slides.length);
+            } else if (diff < -50) {
+                window.goToSlide((currentSlide - 1 + slides.length) % slides.length);
+            }
+        }, {passive: true});
+
+        hero.addEventListener('mousedown', (e) => {
+            startX = e.clientX;
+            isDragging = true;
+        });
+
+        hero.addEventListener('mouseup', (e) => {
+            if (!isDragging) return;
+            isDragging = false;
+            let diff = startX - e.clientX;
+            if (diff > 50) {
+                window.goToSlide((currentSlide + 1) % slides.length);
+            } else if (diff < -50) {
+                window.goToSlide((currentSlide - 1 + slides.length) % slides.length);
+            }
+        });
+        
+        hero.addEventListener('mouseleave', () => {
+            isDragging = false;
+        });
     }
 
     // Testimonials Carousel
