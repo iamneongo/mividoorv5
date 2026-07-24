@@ -1639,7 +1639,7 @@ ul {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-family: 'Mulish', sans-serif;
+  font-family: inherit;
   color: #fff;
   transition: transform var(--duration) var(--timing-function), filter var(--duration) var(--timing-function), color var(--duration) var(--timing-function);
 }
