@@ -6,6 +6,14 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'FzKingshare';
+    src: url('fonts/Fz-Kingshare.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --primary-color: #2b3990; /* Adjusted dark blue */
     --accent-color: #e31837; /* Adjusted bright red */
@@ -35,6 +43,17 @@ body {
 h1, h2, h3, h4, h5, h6, .section-title, .hero-title {
     font-family: var(--font-heading);
     text-wrap: balance;
+}
+
+.script-title {
+    font-family: 'FzKingshare', cursive;
+    color: var(--accent-color);
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: -10px; /* pull the main heading closer */
+    font-weight: normal;
+    text-transform: none;
+    line-height: 1;
 }
 
 button, input, select, textarea {
