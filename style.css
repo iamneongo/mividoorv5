@@ -1698,29 +1698,29 @@ ul {
 
 @media (max-width: 768px) {
     .premium-page-header {
-        padding: 55vw 0 40px;
-        background-position: top center !important;
-        background-size: 100% auto !important;
+        padding: 80px 0 50px;
+        background-position: center !important;
+        background-size: cover !important;
         background-attachment: scroll !important;
-        background-color: #fff;
-        color: var(--text-main);
-        border-bottom: 1px solid #eee;
+        background-color: transparent;
+        color: var(--white);
+        border-bottom: none;
     }
     .premium-page-header::before, .premium-page-header::after {
-        display: none !important;
+        display: block !important;
     }
     .premium-page-header h1 {
-        font-size: 1.7rem;
-        color: var(--text-main);
+        font-size: 2rem;
+        /* Inherit the desktop gold gradient and drop shadow */
     }
     .premium-page-header .breadcrumb {
-        color: var(--text-muted);
+        color: rgba(255, 255, 255, 0.9);
     }
     .premium-page-header .breadcrumb a {
-        color: var(--primary-color);
+        color: var(--white);
     }
     .premium-page-header .breadcrumb span {
-        color: var(--text-muted);
+        color: rgba(255, 255, 255, 0.9);
     }
 }
 
