@@ -1466,6 +1466,18 @@ ul {
     }
 }
 
+/* Gallery Grid */
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.material-card {
+    flex: 0 0 calc(33.333% - 14px);
+    max-width: calc(33.333% - 14px);
+}
+
 @media (max-width: 1024px) {
     .container {
         max-width: 900px;
@@ -1497,7 +1509,12 @@ ul {
 
 @media (max-width: 768px) {
     .craftsmanship { max-height: none; }
-    .craft-img { max-height: 250px; }
+    .tech-images { min-height: 400px; }
+    
+    .material-card {
+        flex: 0 0 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
     /* Header & Navigation */
     .nav { display: none !important; }
     .header-contact { display: none !important; }
@@ -1511,6 +1528,11 @@ ul {
     
     /* Hero Section */
     .hero { padding: 0; height: 780px !important; min-height: 780px !important; max-height: none !important; display: flex; flex-direction: column; justify-content: flex-start; background: #fff; }
+    
+    .material-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
     .hero-container { padding-top: 60vw; padding-bottom: 40px; } /* Push text below the image */
     .hero-title { font-size: 2.2rem; }
     .hero-title-highlight { font-size: 1.8rem; }
