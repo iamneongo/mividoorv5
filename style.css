@@ -42,9 +42,9 @@ h1, h2, h3, h4, h5, h6, .section-title, .hero-title {
 .script-title {
     font-family: 'FzKingshare', cursive;
     color: var(--accent-color);
-    font-size: 1.2em;
+    font-size: 1.4em;
     display: block;
-    margin-bottom: -10px; /* pull the main heading closer */
+    margin-bottom: 5px; /* prevent overlapping */
     font-weight: normal;
     text-transform: none;
     line-height: 1;
