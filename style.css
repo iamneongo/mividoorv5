@@ -1518,9 +1518,15 @@ ul {
     .hero-bg-left { 
         display: none !important;
     }
+    .hero-pagination {
+        top: 50vw;
+        bottom: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
     
     /* Stats */
-    .stats-box { flex-direction: row; flex-wrap: wrap; gap: 20px; padding: 25px 20px; border-radius: 20px; justify-content: space-between; }
+    .stats-box { margin-top: 20px; flex-direction: row; flex-wrap: wrap; gap: 20px; padding: 25px 20px; border-radius: 20px; justify-content: space-between; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
     .stat-item { flex: 0 0 calc(50% - 15px); flex-direction: column; text-align: center; gap: 5px; justify-content: flex-start; }
     .stat-item .stat-info { text-align: center; }
     .stat-divider { display: none; }
