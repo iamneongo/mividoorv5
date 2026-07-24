@@ -1501,14 +1501,23 @@ ul {
     .mobile-menu-btn { display: block !important; }
     
     /* Hero Section */
-    .hero { padding: 100px 0 40px; min-height: 650px; display: flex; flex-direction: column; justify-content: flex-start; }
-    .hero-title { font-size: 2.5rem; }
-    .hero-title-highlight { font-size: 2rem; }
-    .hero-description { font-size: 1rem; }
+    .hero { padding: 90px 0 0; min-height: auto; display: flex; flex-direction: column; justify-content: flex-start; background: #fff; }
+    .hero-container { padding-bottom: 320px; } /* Leave space at bottom for the image */
+    .hero-title { font-size: 2.2rem; }
+    .hero-title-highlight { font-size: 1.8rem; }
+    .hero-description { font-size: 1rem; margin-bottom: 25px; }
     .hero-description br { display: none; }
     .hero-features { display: none; }
-    .hero-bg-slide { background-position: center bottom !important; background-size: cover !important; }
-    .hero-bg-left { background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9) 45%, rgba(255,255,255,0) 85%); }
+    
+    .hero-bg-slide { 
+        background-position: 85% bottom !important; 
+        background-size: 180% auto !important; 
+        background-repeat: no-repeat !important;
+        background-color: #fff;
+    }
+    .hero-bg-left { 
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0.95) 40%, rgba(255,255,255,0) 100%); 
+    }
     
     /* Stats */
     .stats-box { flex-direction: row; flex-wrap: wrap; gap: 20px; padding: 25px 20px; border-radius: 20px; justify-content: space-between; }
@@ -1646,7 +1655,13 @@ ul {
 
 @media (max-width: 768px) {
     .premium-page-header {
-        padding: 120px 0 60px;
+        padding: 90px 0 250px;
+        background-position: 85% bottom !important;
+        background-size: 180% auto !important;
+        background-attachment: scroll !important;
+    }
+    .premium-page-header::before {
+        background: linear-gradient(180deg, rgba(10, 10, 10, 0.95) 0%, rgba(10, 10, 10, 0.9) 30%, rgba(10, 10, 10, 0) 100%) !important;
     }
     .premium-page-header h1 {
         font-size: 2.2rem;
