@@ -1501,8 +1501,8 @@ ul {
     .mobile-menu-btn { display: block !important; }
     
     /* Hero Section */
-    .hero { padding: 90px 0 0; min-height: auto; display: flex; flex-direction: column; justify-content: flex-start; background: #fff; }
-    .hero-container { padding-bottom: 320px; } /* Leave space at bottom for the image */
+    .hero { padding: 0; min-height: auto; display: flex; flex-direction: column; justify-content: flex-start; background: #fff; }
+    .hero-container { padding-top: 60vw; padding-bottom: 40px; } /* Push text below the image */
     .hero-title { font-size: 2.2rem; }
     .hero-title-highlight { font-size: 1.8rem; }
     .hero-description { font-size: 1rem; margin-bottom: 25px; }
@@ -1510,13 +1510,13 @@ ul {
     .hero-features { display: none; }
     
     .hero-bg-slide { 
-        background-position: 85% bottom !important; 
-        background-size: 180% auto !important; 
+        background-position: top center !important; 
+        background-size: 100% auto !important; 
         background-repeat: no-repeat !important;
         background-color: #fff;
     }
     .hero-bg-left { 
-        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0.95) 40%, rgba(255,255,255,0) 100%); 
+        display: none !important;
     }
     
     /* Stats */
@@ -1655,16 +1655,29 @@ ul {
 
 @media (max-width: 768px) {
     .premium-page-header {
-        padding: 90px 0 250px;
-        background-position: 85% bottom !important;
-        background-size: 180% auto !important;
+        padding: 55vw 0 40px;
+        background-position: top center !important;
+        background-size: 100% auto !important;
         background-attachment: scroll !important;
+        background-color: #fff;
+        color: var(--text-main);
+        border-bottom: 1px solid #eee;
     }
-    .premium-page-header::before {
-        background: linear-gradient(180deg, rgba(10, 10, 10, 0.95) 0%, rgba(10, 10, 10, 0.9) 30%, rgba(10, 10, 10, 0) 100%) !important;
+    .premium-page-header::before, .premium-page-header::after {
+        display: none !important;
     }
     .premium-page-header h1 {
         font-size: 2.2rem;
+        color: var(--text-main);
+    }
+    .premium-page-header .breadcrumb {
+        color: var(--text-muted);
+    }
+    .premium-page-header .breadcrumb a {
+        color: var(--primary-color);
+    }
+    .premium-page-header .breadcrumb span {
+        color: var(--text-muted);
     }
 }
 
