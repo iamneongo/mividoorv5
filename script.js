@@ -1,4 +1,43 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Dynamic Uiverse Button Injection
+    const allBtns = document.querySelectorAll('.btn:not(.tab-btn, .mobile-menu-btn, .close-sidebar-btn)');
+    allBtns.forEach(btn => {
+        // Skip if already wrapped
+        if (btn.parentNode.classList.contains('btn-container')) return;
+
+        const container = document.createElement('div');
+        container.className = 'btn-container';
+        
+        // Copy width utility classes if any
+        if (btn.classList.contains('w-100')) {
+            container.classList.add('w-100');
+        }
+        if (btn.style.width) {
+            container.style.width = btn.style.width;
+        }
+
+        btn.parentNode.insertBefore(container, btn);
+        container.appendChild(btn);
+
+        // Wrap text
+        if (!btn.querySelector('.btn-text')) {
+            const span = document.createElement('span');
+            span.className = 'btn-text';
+            span.innerHTML = btn.innerHTML;
+            btn.innerHTML = '';
+            btn.appendChild(span);
+        }
+
+        // Add 4 SVG corners
+        const svgHTML = `
+            <svg class="btn-corner" xmlns="http://www.w3.org/2000/svg" viewBox="-1 1 32 32"><path d="M32,32C14.355,32,0,17.645,0,0h.985c0,17.102,13.913,31.015,31.015,31.015v.985Z"></path></svg>
+            <svg class="btn-corner" xmlns="http://www.w3.org/2000/svg" viewBox="-1 1 32 32"><path d="M32,32C14.355,32,0,17.645,0,0h.985c0,17.102,13.913,31.015,31.015,31.015v.985Z"></path></svg>
+            <svg class="btn-corner" xmlns="http://www.w3.org/2000/svg" viewBox="-1 1 32 32"><path d="M32,32C14.355,32,0,17.645,0,0h.985c0,17.102,13.913,31.015,31.015,31.015v.985Z"></path></svg>
+            <svg class="btn-corner" xmlns="http://www.w3.org/2000/svg" viewBox="-1 1 32 32"><path d="M32,32C14.355,32,0,17.645,0,0h.985c0,17.102,13.913,31.015,31.015,31.015v.985Z"></path></svg>
+        `;
+        container.insertAdjacentHTML('beforeend', svgHTML);
+    });
+
     // Mobile menu toggle
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const nav = document.querySelector('.nav');
