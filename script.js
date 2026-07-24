@@ -169,7 +169,7 @@ function renderProducts(category) {
                     <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 5px; font-size: 0.9rem;">Mã: ${p.id}</p>
                     <p class="product-tags" style="margin-bottom: 10px;">${p.tag}</p>
                     <p class="product-desc" style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 15px; line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;" title="${p.description}">${p.description}</p>
-                    <a href="https://mivicomposite.vn/san-pham/" target="_blank" class="view-detail text-red">XEM CHI TIẾT <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="chi-tiet-san-pham.html" class="view-detail text-red">XEM CHI TIẾT <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
         `;
