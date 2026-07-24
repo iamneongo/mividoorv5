@@ -162,7 +162,7 @@ function renderProducts(category) {
         html += `
             <div class="product-card">
                 <div class="product-image">
-                    <img src="${p.img}" alt="${p.name}" onerror="this.src='https://via.placeholder.com/400x600?text=${p.name.replace(/ /g, '+')}'">
+                    <img src="${p.img}" alt="${p.name}" onerror="this.src='images/mau-cua-phang.jpg'">
                 </div>
                 <div class="product-content">
                     <h3 style="margin-bottom: 5px;">${p.name}</h3>
