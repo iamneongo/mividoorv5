@@ -35,6 +35,9 @@ body {
 h1, h2, h3, h4, h5, h6, .section-title, .hero-title {
     font-family: var(--font-heading);
     text-wrap: balance;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
 }
 
 button, input, select, textarea {
@@ -1500,6 +1503,12 @@ ul {
     .header-contact { display: none !important; }
     .mobile-menu-btn { display: block !important; }
     
+    /* Layout Balance */
+    .section { padding: 45px 0; }
+    .section-header { margin-bottom: 30px; gap: 10px; }
+    .section-title { font-size: 1.7rem; margin-bottom: 10px; }
+    .title-underline { margin-bottom: 35px; }
+    
     /* Hero Section */
     .hero { padding: 0; height: 780px !important; min-height: 780px !important; max-height: none !important; display: flex; flex-direction: column; justify-content: flex-start; background: #fff; }
     .hero-container { padding-top: 60vw; padding-bottom: 40px; } /* Push text below the image */
@@ -1526,14 +1535,14 @@ ul {
     }
     
     /* Stats */
-    .stats-box { margin-top: 20px; flex-direction: row; flex-wrap: wrap; gap: 20px; padding: 25px 20px; border-radius: 20px; justify-content: space-between; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
-    .stat-item { flex: 0 0 calc(50% - 15px); flex-direction: column; text-align: center; gap: 5px; justify-content: flex-start; }
+    .stats-box { margin-top: 20px; flex-direction: row; flex-wrap: wrap; gap: 15px; padding: 20px 15px; border-radius: 15px; justify-content: space-between; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+    .stat-item { flex: 0 0 calc(50% - 10px); flex-direction: column; text-align: center; gap: 5px; justify-content: flex-start; }
     .stat-item .stat-info { text-align: center; }
     .stat-divider { display: none; }
     
     /* Grids */
-    .reasons-grid, .collection-grid, .luxury-grid, .specs-grid { grid-template-columns: 1fr; }
-    .production-technology { flex-direction: column; }
+    .reasons-grid, .collection-grid, .luxury-grid, .specs-grid { grid-template-columns: 1fr; gap: 20px; }
+    .production-technology { flex-direction: column; gap: 20px; }
     
     /* Tech section */
     .tech-description br { display: none; }
@@ -1673,7 +1682,7 @@ ul {
         display: none !important;
     }
     .premium-page-header h1 {
-        font-size: 2.2rem;
+        font-size: 1.7rem;
         color: var(--text-main);
     }
     .premium-page-header .breadcrumb {
@@ -1959,5 +1968,5 @@ ul {
 }
 @media (max-width: 768px) {
     .news-grid { grid-template-columns: 1fr; }
-    .article-header h1 { font-size: 1.8rem; }
+    .article-header h1 { font-size: 1.6rem; }
 }
