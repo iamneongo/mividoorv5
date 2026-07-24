@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'Young';
+    src: url('fonts/YOUNG-REGULAR.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 :root {
     --primary-color: #2b3990; /* Adjusted dark blue */
@@ -9,8 +15,8 @@
     --border-color: #E0E0E0;
     --white: #FFFFFF;
     --container-width: 1400px;
-    --font-heading: 'Anybody', sans-serif;
-    --font-body: 'Anybody', sans-serif;
+    --font-heading: 'Young', sans-serif;
+    --font-body: 'Young', sans-serif;
 }
 
 * {
