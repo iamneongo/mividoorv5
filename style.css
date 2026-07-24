@@ -1650,7 +1650,84 @@ ul {
 }
 
 /* --- Uiverse Button Styles --- */
-/* Phone buttons specific styling to reduce padding */
-a[href^="tel:"].btn {
-    padding: 8px 18px !important;
+.btn-container {
+  --btn-color: var(--primary-color);
+  --corner-color: rgba(26, 42, 108, 0.2); /* matches primary color slightly */
+  --corner-dist: 24px;
+  --corner-multiplier: 1.5;
+  --timing-function: cubic-bezier(0, 0, 0, 2.5);
+  --duration: 250ms;
+
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.btn-container.w-100 {
+    display: flex;
+    width: 100%;
+}
+
+.btn-container .btn {
+  position: relative;
+  min-height: calc(var(--corner-dist) * 2);
+  border-radius: 16px !important;
+  background: linear-gradient(#fff2, #0001), var(--btn-color) !important;
+  box-shadow:
+    1px 1px 2px -1px #fff inset,
+    0 2px 1px #00000010,
+    0 4px 2px #00000010,
+    0 8px 4px #00000010,
+    0 16px 8px #00000010,
+    0 32px 16px #00000010 !important;
+  transition: transform var(--duration) var(--timing-function), filter var(--duration) var(--timing-function) !important;
+  z-index: 2;
+  overflow: visible;
+}
+
+/* Button colors */
+.btn-container:has(.btn-danger) { --btn-color: var(--accent-color); --corner-color: rgba(227, 24, 55, 0.2); }
+.btn-container:has(.btn-outline),
+.btn-container:has(.btn-outline-primary),
+.btn-container:has(.btn-outline-danger) {
+  --btn-color: var(--white);
+  --corner-color: rgba(26, 42, 108, 0.2);
+}
+.btn-container:has(.btn-outline-danger) { --corner-color: rgba(227, 24, 55, 0.2); }
+
+.btn-container .btn-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: inherit;
+  color: #fff;
+  transition: transform var(--duration) var(--timing-function), filter var(--duration) var(--timing-function), color var(--duration) var(--timing-function);
+}
+
+.btn-container:has(.btn-outline) .btn-text,
+.btn-container:has(.btn-outline-primary) .btn-text {
+  color: var(--primary-color) !important;
+}
+.btn-container:has(.btn-outline-danger) .btn-text {
+  color: var(--accent-color) !important;
+}
+
+.btn-container:hover .btn,
+.btn-container:focus-within .btn {
+  transform: scale(1.05);
+  filter: drop-shadow(0 16px 16px #0002);
+}
+
+.btn-container:hover .btn-text {
+  transform: scale(1.05);
+}
+
+.btn-container:active .btn {
+  transform: scale(0.95);
+  filter: drop-shadow(0 10px 4px #0002);
+}
+.btn-container:active .btn-text {
+  transform: scale(1);
 }
