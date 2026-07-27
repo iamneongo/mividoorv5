@@ -71,7 +71,7 @@ const newHtml = `<!-- Về Chúng Tôi - Vì sao chọn -->
                     <a href="https://mivicomposite.vn/cong-nghe/" class="btn btn-outline-danger btn-pill">TÌM HIỂU CÔNG NGHỆ &nbsp;<i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
                 <div class="tech-images" style="flex: 1; min-width: 300px; position: relative;">
-                    <img src="images/factory-video.jpg" alt="Nhà máy Mividoor" style="width: 100%; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); object-fit: cover; aspect-ratio: 4/3;" onerror="this.src='https://via.placeholder.com/800x600?text=Nha+may+Mividoor'">
+                    <img src="images/factory-video.jpg" alt="Nhà máy Mividoor" style="width: 100%; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); object-fit: cover; aspect-ratio: 4/3;" onerror="this.style.display='none'">
                 </div>
             </div>
         </div>
@@ -163,21 +163,21 @@ const newHtml = `<!-- Về Chúng Tôi - Vì sao chọn -->
             <div class="luxury-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
                 <!-- 3 mẫu luxury -->
                 <div class="luxury-card" style="position: relative; overflow: hidden; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); aspect-ratio: 3/4; background: #eee;">
-                    <img src="images/luxury-1.jpg" alt="Luxury Door 1" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.src='https://via.placeholder.com/600x800?text=Luxury+Door+1'">
+                    <img src="images/luxury-1.jpg" alt="Luxury Door 1" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'">
                     <div class="luxury-info" style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); padding: 40px 20px 20px; color: white;">
                         <h3 style="margin: 0 0 5px 0; color: #d4af37;">MIVI-LUX 01</h3>
                         <p style="margin: 0; font-size: 0.95rem; opacity: 0.9;">Sang trọng, Đẳng cấp</p>
                     </div>
                 </div>
                 <div class="luxury-card" style="position: relative; overflow: hidden; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); aspect-ratio: 3/4; background: #eee;">
-                    <img src="images/luxury-2.jpg" alt="Luxury Door 2" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.src='https://via.placeholder.com/600x800?text=Luxury+Door+2'">
+                    <img src="images/luxury-2.jpg" alt="Luxury Door 2" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'">
                     <div class="luxury-info" style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); padding: 40px 20px 20px; color: white;">
                         <h3 style="margin: 0 0 5px 0; color: #d4af37;">MIVI-LUX 02</h3>
                         <p style="margin: 0; font-size: 0.95rem; opacity: 0.9;">Tân cổ điển, Tinh tế</p>
                     </div>
                 </div>
                 <div class="luxury-card" style="position: relative; overflow: hidden; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); aspect-ratio: 3/4; background: #eee;">
-                    <img src="images/luxury-3.jpg" alt="Luxury Door 3" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.src='https://via.placeholder.com/600x800?text=Luxury+Door+3'">
+                    <img src="images/luxury-3.jpg" alt="Luxury Door 3" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'">
                     <div class="luxury-info" style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); padding: 40px 20px 20px; color: white;">
                         <h3 style="margin: 0 0 5px 0; color: #d4af37;">MIVI-LUX 03</h3>
                         <p style="margin: 0; font-size: 0.95rem; opacity: 0.9;">Hiện đại, Phá cách</p>

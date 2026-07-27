@@ -8,7 +8,7 @@ const newSections = `
         <div class="container">
             <div style="display: flex; flex-wrap: wrap; gap: 50px; align-items: center;">
                 <div style="flex: 1; min-width: 300px;">
-                    <img src="images/hero2-new.webp" alt="Câu Chuyện Thương Hiệu" style="width: 100%; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); object-fit: cover; aspect-ratio: 4/3;" onerror="this.src='https://via.placeholder.com/600x450?text=Brand+Story'">
+                    <img src="images/hero2-new.webp" alt="Câu Chuyện Thương Hiệu" style="width: 100%; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); object-fit: cover; aspect-ratio: 4/3;" onerror="this.style.display='none'">
                 </div>
                 <div style="flex: 1; min-width: 300px;">
                     <h2 class="section-title">CÂU CHUYỆN THƯƠNG HIỆU</h2>
