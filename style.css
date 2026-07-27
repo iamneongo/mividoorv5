@@ -1613,7 +1613,7 @@ ul {
     position: relative;
     padding: 150px 0 80px;
     background-color: var(--primary-color);
-    background-image: url('images/hero-1.png'); /* Default background */
+    background-image: url('images/hero-1.webp'); /* Default background */
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Parallax effect */

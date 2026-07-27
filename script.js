@@ -92,24 +92,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const pvcGrid = document.getElementById('pvc-colors-grid');
     if (pvcGrid) {
         const pvcColors = [
-            { code: 'M-01', img: 'images/mamauu/298cb06f5192d0cc8983.jpg' },
-            { code: 'M-02', img: 'images/mamauu/2d2bfdd41c299d77c438.jpg' },
-            { code: 'M-03', img: 'images/mamauu/ef061ae4fb197a472308.jpg' },
-            { code: 'M-04', img: 'images/mamauu/m04.jpg' },
-            { code: 'M-05', img: 'images/mamauu/6bb4095ee8a369fd30b2.jpg' },
-            { code: 'M-06', img: 'images/mamauu/e97cf39a12679339ca76.jpg' },
-            { code: 'M-07', img: 'images/mamauu/744cffb11e4c9f12c65d.jpg' },
-            { code: 'M-08', img: 'images/mamauu/332761c5803801665829.jpg' },
-            { code: 'M-09', img: 'images/mamauu/eaddd33f32c2b39cead3.jpg' },
-            { code: 'M-10', img: 'images/mamauu/774a59a8b855390b6044.jpg' },
-            { code: 'M-11', img: 'images/mamauu/2c8d9a1d7be0fabea3f1.jpg' },
-            { code: 'M-12', img: 'images/mamauu/c25d2ebfcf424e1c1753.jpg' },
-            { code: 'M-13', img: 'images/mamauu/m13.jpg' },
-            { code: 'M-14', img: 'images/mamauu/1de54807a9fa28a471eb.jpg' },
-            { code: 'M-15 mới', img: 'images/mamauu/113c94df7522f47cad33.jpg' },
-            { code: 'M-16', img: 'images/mamauu/edf75714b6e937b76ef8.jpg' },
-            { code: 'M-17', img: 'images/mamauu/m17.jpg' },
-            { code: 'M-18', img: 'images/mamauu/m18.jpg' }
+            { code: 'M-01', img: 'images/mamauu/298cb06f5192d0cc8983.webp' },
+            { code: 'M-02', img: 'images/mamauu/2d2bfdd41c299d77c438.webp' },
+            { code: 'M-03', img: 'images/mamauu/ef061ae4fb197a472308.webp' },
+            { code: 'M-04', img: 'images/mamauu/m04.webp' },
+            { code: 'M-05', img: 'images/mamauu/6bb4095ee8a369fd30b2.webp' },
+            { code: 'M-06', img: 'images/mamauu/e97cf39a12679339ca76.webp' },
+            { code: 'M-07', img: 'images/mamauu/744cffb11e4c9f12c65d.webp' },
+            { code: 'M-08', img: 'images/mamauu/332761c5803801665829.webp' },
+            { code: 'M-09', img: 'images/mamauu/eaddd33f32c2b39cead3.webp' },
+            { code: 'M-10', img: 'images/mamauu/774a59a8b855390b6044.webp' },
+            { code: 'M-11', img: 'images/mamauu/2c8d9a1d7be0fabea3f1.webp' },
+            { code: 'M-12', img: 'images/mamauu/c25d2ebfcf424e1c1753.webp' },
+            { code: 'M-13', img: 'images/mamauu/m13.webp' },
+            { code: 'M-14', img: 'images/mamauu/1de54807a9fa28a471eb.webp' },
+            { code: 'M-15 mới', img: 'images/mamauu/113c94df7522f47cad33.webp' },
+            { code: 'M-16', img: 'images/mamauu/edf75714b6e937b76ef8.webp' },
+            { code: 'M-17', img: 'images/mamauu/m17.webp' },
+            { code: 'M-18', img: 'images/mamauu/m18.webp' }
         ];
         
         let html = '';
@@ -137,15 +137,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Products Data
 const productsData = [
-    { id: 'MV-01', name: 'Cửa Phẳng Sang Trọng', tag: 'Tối giản - Tinh tế', img: 'images/mau-cua-phang.jpg', category: 'cua-phang', description: 'Mẫu cửa composite phẳng MV-01 thiết kế tối giản, bề mặt vân gỗ tự nhiên sắc nét. Lựa chọn hoàn hảo cho không gian nội thất hiện đại, mang lại sự tinh tế và đẳng cấp.' },
-    { id: 'MV-02', name: 'Cửa Nẹp Nhôm Inox', tag: 'Sang trọng - Điểm nhấn', img: 'images/mau-nep-nhom-inox.jpg', category: 'cua-phao-chi', description: 'Cửa composite trang trí chỉ nhôm hoặc inox sáng bóng tạo điểm nhấn mạnh mẽ. Phong cách sang trọng, phù hợp cho chung cư cao cấp và biệt thự.' },
-    { id: 'MV-03', name: 'Cửa Phào Chỉ Nổi', tag: 'Cổ điển - Đẳng cấp', img: 'images/mau-phao-chi-noi.jpg', category: 'cua-phao-chi', description: 'Cửa composite phào chỉ nổi mang phong cách tân cổ điển, đường nét điêu khắc tinh xảo. Tạo không gian sống bề thế, vững chãi và sang trọng bậc nhất.' },
-    { id: 'MV-04', name: 'Cửa Lùa', tag: 'Tiện ích - Tối ưu', img: 'images/mau-cua-lua.jpg', category: 'cua-o-kinh', description: 'Hệ cửa lùa composite giúp tối ưu hóa diện tích không gian sống. Hệ ray trượt siêu êm, độ bền cao, giải pháp thông minh cho phòng có diện tích hẹp.' },
-    { id: 'MV-05', name: 'Cửa Vòm', tag: 'Mềm mại - Độc đáo', img: 'images/mau-cua-vom.jpg', category: 'cua-phang', description: 'Cửa vòm composite với những đường cong mềm mại, phá vỡ sự góc cạnh truyền thống. Tạo điểm nhấn kiến trúc ấn tượng, thời thượng và lãng mạn.' },
-    { id: 'MV-06', name: 'Cửa Soi Huỳnh CNC', tag: 'Hoa văn - Nghệ thuật', img: 'images/mau-hoa-van-cnc.jpg', category: 'cua-cnc', description: 'Cửa soi huỳnh bằng công nghệ CNC cho ra các đường nét hoa văn chính xác tuyệt đối. Mang đến giá trị nghệ thuật cao và phong cách độc đáo cho ngôi nhà.' },
-    { id: 'MV-07', name: 'Cửa Ô Kính', tag: 'Hiện đại - Không gian mở', img: 'images/mau-o-kinh.jpg', category: 'cua-o-kinh', description: 'Thiết kế kết hợp ô kính cường lực giúp lấy sáng tự nhiên, mở rộng tầm nhìn không gian. Vừa đảm bảo sự chắc chắn vừa mang lại sự thông thoáng.' },
-    { id: 'MV-08', name: 'Cửa Ô Lá Sách', tag: 'Thoáng khí - Thanh lịch', img: 'images/mau-o-la-sach.jpg', category: 'cua-o-kinh', description: 'Cửa tích hợp ô lá sách thông minh, giúp lưu thông không khí ngay cả khi đóng cửa. Giải pháp tuyệt vời cho phòng tắm hoặc các khu vực cần sự khô ráo.' },
-    { id: 'MV-09', name: 'Cửa Ô Fix', tag: 'Đón sáng - Rộng rãi', img: 'images/mau-o-fix.jpg', category: 'cua-o-kinh', description: 'Cửa trang bị ô kính fix cố định, cung cấp thêm ánh sáng cho hành lang hay các không gian khuất. Sự kết hợp hoàn hảo giữa công năng và thẩm mỹ.' }
+    { id: 'MV-01', name: 'Cửa Phẳng Sang Trọng', tag: 'Tối giản - Tinh tế', img: 'images/mau-cua-phang.webp', category: 'cua-phang', description: 'Mẫu cửa composite phẳng MV-01 thiết kế tối giản, bề mặt vân gỗ tự nhiên sắc nét. Lựa chọn hoàn hảo cho không gian nội thất hiện đại, mang lại sự tinh tế và đẳng cấp.' },
+    { id: 'MV-02', name: 'Cửa Nẹp Nhôm Inox', tag: 'Sang trọng - Điểm nhấn', img: 'images/mau-nep-nhom-inox.webp', category: 'cua-phao-chi', description: 'Cửa composite trang trí chỉ nhôm hoặc inox sáng bóng tạo điểm nhấn mạnh mẽ. Phong cách sang trọng, phù hợp cho chung cư cao cấp và biệt thự.' },
+    { id: 'MV-03', name: 'Cửa Phào Chỉ Nổi', tag: 'Cổ điển - Đẳng cấp', img: 'images/mau-phao-chi-noi.webp', category: 'cua-phao-chi', description: 'Cửa composite phào chỉ nổi mang phong cách tân cổ điển, đường nét điêu khắc tinh xảo. Tạo không gian sống bề thế, vững chãi và sang trọng bậc nhất.' },
+    { id: 'MV-04', name: 'Cửa Lùa', tag: 'Tiện ích - Tối ưu', img: 'images/mau-cua-lua.webp', category: 'cua-o-kinh', description: 'Hệ cửa lùa composite giúp tối ưu hóa diện tích không gian sống. Hệ ray trượt siêu êm, độ bền cao, giải pháp thông minh cho phòng có diện tích hẹp.' },
+    { id: 'MV-05', name: 'Cửa Vòm', tag: 'Mềm mại - Độc đáo', img: 'images/mau-cua-vom.webp', category: 'cua-phang', description: 'Cửa vòm composite với những đường cong mềm mại, phá vỡ sự góc cạnh truyền thống. Tạo điểm nhấn kiến trúc ấn tượng, thời thượng và lãng mạn.' },
+    { id: 'MV-06', name: 'Cửa Soi Huỳnh CNC', tag: 'Hoa văn - Nghệ thuật', img: 'images/mau-hoa-van-cnc.webp', category: 'cua-cnc', description: 'Cửa soi huỳnh bằng công nghệ CNC cho ra các đường nét hoa văn chính xác tuyệt đối. Mang đến giá trị nghệ thuật cao và phong cách độc đáo cho ngôi nhà.' },
+    { id: 'MV-07', name: 'Cửa Ô Kính', tag: 'Hiện đại - Không gian mở', img: 'images/mau-o-kinh.webp', category: 'cua-o-kinh', description: 'Thiết kế kết hợp ô kính cường lực giúp lấy sáng tự nhiên, mở rộng tầm nhìn không gian. Vừa đảm bảo sự chắc chắn vừa mang lại sự thông thoáng.' },
+    { id: 'MV-08', name: 'Cửa Ô Lá Sách', tag: 'Thoáng khí - Thanh lịch', img: 'images/mau-o-la-sach.webp', category: 'cua-o-kinh', description: 'Cửa tích hợp ô lá sách thông minh, giúp lưu thông không khí ngay cả khi đóng cửa. Giải pháp tuyệt vời cho phòng tắm hoặc các khu vực cần sự khô ráo.' },
+    { id: 'MV-09', name: 'Cửa Ô Fix', tag: 'Đón sáng - Rộng rãi', img: 'images/mau-o-fix.webp', category: 'cua-o-kinh', description: 'Cửa trang bị ô kính fix cố định, cung cấp thêm ánh sáng cho hành lang hay các không gian khuất. Sự kết hợp hoàn hảo giữa công năng và thẩm mỹ.' }
 ];
 
 function renderProducts(category) {
@@ -162,7 +162,7 @@ function renderProducts(category) {
         html += `
             <div class="product-card">
                 <div class="product-image">
-                    <img src="${p.img}" alt="${p.name}" onerror="this.src='images/mau-cua-phang.jpg'">
+                    <img src="${p.img}" alt="${p.name}" onerror="this.src='images/mau-cua-phang.webp'">
                 </div>
                 <div class="product-content">
                     <h3 style="margin-bottom: 5px;">${p.name}</h3>
