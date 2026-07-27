@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const container = document.createElement('div');
         container.className = 'btn-container';
-        
+
         // Copy width utility classes if any
         if (btn.classList.contains('w-100')) {
             container.classList.add('w-100');
@@ -34,8 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mobile menu toggle
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const nav = document.querySelector('.nav');
-    
-    if (mobileMenuBtn) {
+    const usesSidebarMenu = Boolean(document.getElementById('mobileSidebar'));
+
+    if (mobileMenuBtn && nav && !usesSidebarMenu) {
         mobileMenuBtn.addEventListener('click', () => {
             nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
             if (nav.style.display === 'block') {
@@ -45,11 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 nav.style.width = '100%';
                 nav.style.backgroundColor = 'white';
                 nav.style.boxShadow = '0 5px 10px rgba(0,0,0,0.1)';
-                
+
                 const ul = nav.querySelector('ul');
                 ul.style.flexDirection = 'column';
                 ul.style.gap = '0';
-                
+
                 const lis = ul.querySelectorAll('li');
                 lis.forEach(li => {
                     li.style.padding = '15px 20px';
@@ -62,11 +63,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 nav.style.width = '';
                 nav.style.backgroundColor = '';
                 nav.style.boxShadow = '';
-                
+
                 const ul = nav.querySelector('ul');
                 ul.style.flexDirection = '';
                 ul.style.gap = '';
-                
+
                 const lis = ul.querySelectorAll('li');
                 lis.forEach(li => {
                     li.style.padding = '';
@@ -78,7 +79,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Reset nav style on resize
     window.addEventListener('resize', () => {
-        if (window.innerWidth > 768 && nav) {
+        if (usesSidebarMenu && nav) {
+            nav.style.display = '';
+            nav.style.position = '';
+            nav.style.top = '';
+            nav.style.left = '';
+            nav.style.width = '';
+            nav.style.backgroundColor = '';
+            nav.style.boxShadow = '';
+            const ul = nav.querySelector('ul');
+            if (ul) {
+                ul.style.flexDirection = '';
+                ul.style.gap = '';
+            }
+            return;
+        }
+
+        if (window.innerWidth > 1100 && nav) {
             nav.style.display = 'block';
             nav.style.position = '';
             const ul = nav.querySelector('ul');
@@ -111,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
             { code: 'M-17', img: 'images/mamauu/m17.jpg' },
             { code: 'M-18', img: 'images/mamauu/m18.jpg' }
         ];
-        
+
         let html = '';
         pvcColors.forEach(item => {
             const isPlaceholder = item.img.includes('placeholder');
@@ -151,12 +168,12 @@ const productsData = [
 function renderProducts(category) {
     const grid = document.getElementById('product-grid');
     if (!grid) return;
-    
+
     let filtered = productsData;
     if (category !== 'all') {
         filtered = productsData.filter(p => p.category === category);
     }
-    
+
     let html = '';
     filtered.forEach(p => {
         html += `
@@ -174,7 +191,7 @@ function renderProducts(category) {
             </div>
         `;
     });
-    
+
     // Add fade out/in effect
     grid.style.opacity = 0;
     setTimeout(() => {
@@ -187,11 +204,11 @@ function filterProducts(event, category) {
     // Update active button
     const btns = document.querySelectorAll('.tab-btn');
     btns.forEach(btn => btn.classList.remove('active'));
-    
+
     if (event && event.currentTarget) {
         event.currentTarget.classList.add('active');
     }
-    
+
     renderProducts(category);
 }
 
@@ -206,18 +223,15 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!slides.length) return;
         slides[currentSlide].classList.remove('active');
         if (dots.length > currentSlide) dots[currentSlide].classList.remove('active');
-        
+
         currentSlide = index;
-        
+
         slides[currentSlide].classList.add('active');
         if (dots.length > currentSlide) dots[currentSlide].classList.add('active');
     };
 
     if (slides.length > 0) {
-        setInterval(() => {
-            let next = (currentSlide + 1) % slides.length;
-            window.goToSlide(next);
-        }, 5000);
+        // Auto-rotation disabled — slides change only via the dots or swipe.
 
         // Add drag/swipe logic
         const hero = document.querySelector('.hero');
@@ -256,7 +270,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 window.goToSlide((currentSlide - 1 + slides.length) % slides.length);
             }
         });
-        
+
         hero.addEventListener('mouseleave', () => {
             isDragging = false;
         });
@@ -340,5 +354,50 @@ document.addEventListener('DOMContentLoaded', () => {
     if (closeSidebarBtn) closeSidebarBtn.addEventListener('click', closeMenu);
     if (sidebarBackdrop) {
         sidebarBackdrop.addEventListener('click', closeMenu);
+    }
+});
+
+// Modern UX enhancements: sticky-header shadow + AOS scroll animations
+document.addEventListener('DOMContentLoaded', () => {
+    // 1) Add a subtle shadow to the header once the page is scrolled
+    const header = document.querySelector('.header');
+    if (header) {
+        const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+        onScroll();
+        window.addEventListener('scroll', onScroll, { passive: true });
+    }
+
+    // 2) AOS (Animate On Scroll). Attributes are assigned here so we don't have to
+    //    hand-edit every element; guarded so a missing library (or reduced-motion
+    //    preference) leaves all content visible.
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (typeof AOS !== 'undefined' && !prefersReduced) {
+        const aosSelector = [
+            '.reason-card', '.material-card', '.luxury-card', '.news-card',
+            '.spec-card', '.contact-item', '.stat-item', '.craftsmanship',
+            '.structure-wrapper', '.production-technology', '.job-card',
+            '.step-item', '.culture-box', '.recent-news-item', '.section-title'
+        ].join(', ');
+
+        document.querySelectorAll(aosSelector).forEach(el => {
+            if (!el.hasAttribute('data-aos')) el.setAttribute('data-aos', 'fade-up');
+            const parent = el.parentElement;
+            const sibs = parent
+                ? Array.from(parent.children).filter(c => c.matches && c.matches(aosSelector))
+                : [];
+            const idx = Math.max(sibs.indexOf(el), 0);
+            const delay = Math.min(idx, 5) * 80;
+            if (delay && !el.hasAttribute('data-aos-delay')) {
+                el.setAttribute('data-aos-delay', String(delay));
+            }
+        });
+
+        AOS.init({
+            duration: 650,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 60,
+            disable: () => window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        });
     }
 });

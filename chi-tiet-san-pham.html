@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css?v=6">
+    <link rel="stylesheet" href="style.css?v=9">
     <style>
         .product-detail-section { padding: 80px 0; background-color: #fff; }
         .product-detail-grid { display: flex; flex-wrap: wrap; gap: 40px; margin-bottom: 60px; }
@@ -26,17 +26,21 @@
         .product-meta { margin-bottom: 30px; font-size: 0.95rem; color: #777; }
         .product-meta span { display: block; margin-bottom: 5px; }
         .product-meta strong { color: #333; }
-        
+
         .product-content-tabs { margin-top: 60px; border-top: 1px solid #eee; padding-top: 50px; }
         .product-content-tabs h3 { font-size: 1.8rem; color: var(--primary-color); margin-bottom: 25px; }
         .product-long-desc { color: #555; line-height: 1.8; font-size: 1.1rem; }
         .product-long-desc p { margin-bottom: 20px; }
-        
+
         @media (max-width: 768px) {
             .product-detail-grid { flex-direction: column; gap: 30px; }
             .product-title { font-size: 2rem; }
         }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
 </head>
 <body>
     <!-- Header -->
@@ -103,43 +107,43 @@
                 <div class="product-image-col">
                     <img src="images/luxury-10.jpg" alt="Mẫu cửa composite" class="product-main-img" onerror="this.src='images/mau-cua-phang.jpg'">
                 </div>
-                
+
                 <!-- Info -->
                 <div class="product-info-col">
                     <h1 class="product-title">Cửa Composite MIVIDOOR LUX 08</h1>
                     <div class="product-price">Liên hệ nhận báo giá</div>
-                    
+
                     <div class="product-short-desc">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </div>
-                    
+
                     <ul class="product-features">
                         <li><i class="fa-solid fa-check-circle"></i> Chống nước tuyệt đối 100%</li>
                         <li><i class="fa-solid fa-check-circle"></i> Không cong vênh, co ngót, mối mọt</li>
                         <li><i class="fa-solid fa-check-circle"></i> Cách âm, cách nhiệt hiệu quả</li>
 
                     </ul>
-                    
+
                     <div class="product-meta">
                         <span><strong>Mã sản phẩm:</strong> LUX-08</span>
                         <span><strong>Danh mục:</strong> Cửa Composite Luxury</span>
                         <span><strong>Bảo hành:</strong> 10 năm</span>
                     </div>
-                    
+
                     <div style="margin-top: 10px;">
                         <a href="tel:0943393539" class="btn btn-danger btn-pill" style="padding: 15px 40px; font-size: 1.1rem;"><i class="fa-solid fa-phone" style="margin-right: 8px;"></i> Liên Hệ Tư Vấn</a>
                     </div>
                 </div>
             </div>
-            
+
             <!-- Long Description Tabs -->
             <div class="product-content-tabs">
                 <h3>Mô tả chi tiết</h3>
                 <div class="product-long-desc">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac mattis dolor, quis convallis arcu. Phasellus viverra ex id lectus vulputate, nec rutrum eros luctus. Suspendisse potenti. Nam non orci nec magna tempor tempus id sit amet ipsum. Pellentesque dapibus eleifend eros non egestas.</p>
-                    
+
                     <p>Integer nec bibendum lacus. Praesent ut justo dui. Proin euismod eros non massa mattis, a consectetur tellus varius. Donec a feugiat enim. Maecenas scelerisque tristique lorem, vitae ultrices est egestas vitae. Quisque venenatis tincidunt odio sed semper. Curabitur vel accumsan ligula. Cras in dolor ex.</p>
-                    
+
                     <p>Duis interdum velit sit amet eros eleifend, at pharetra magna feugiat. Sed vulputate risus eu urna luctus, eu placerat lectus imperdiet. Vestibulum varius erat eu nisl auctor sodales. Fusce eget dictum libero, vel sagittis nisi. Suspendisse semper risus a ante finibus efficitur. Etiam ut urna in quam ultricies scelerisque vel in justo. Mauris consequat interdum neque ac pharetra. Nunc pellentesque nisl ac nulla malesuada rhoncus.</p>
                 </div>
             </div>
@@ -196,7 +200,7 @@
             </div>
         </div>
     </footer>
-    
-    <script src="script.js?v=4"></script>
+
+    <script src="script.js?v=7"></script>
 </body>
 </html>

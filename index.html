@@ -10,7 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css?v=5">
+    <link rel="stylesheet" href="style.css?v=9">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
 </head>
 <body>
     <!-- Header -->
@@ -110,7 +114,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
         <div class="container hero-container-features" style="position: absolute; bottom: 0; left: 0; right: 0; z-index: 10; pointer-events: none;">
             <div class="hero-features" style="pointer-events: auto; padding-bottom: 120px;">
@@ -133,7 +137,7 @@
                     <span>Bảo hành<br>10 năm</span>
                 </div>
             </div>
-            
+
             <div class="hero-pagination" style="pointer-events: auto;">
                 <span class="dot active" onclick="goToSlide(0)"></span>
                 <span class="dot" onclick="goToSlide(1)"></span>
@@ -183,7 +187,7 @@
         <div class="container">
             <h2 class="section-title text-center">VÌ SAO CHỌN CỬA COMPOSITE MIVIDOOR?</h2>
             <div class="title-underline"></div>
-            
+
             <!-- Phần 1: Tính năng -->
             <div class="reasons-grid" style="margin-bottom: 50px;">
                 <div class="reason-card">
@@ -191,42 +195,42 @@
                     <div class="reason-icon"><i class="fa-solid fa-droplet-slash"></i></div>
                     <h3>Chống nước tuyệt đối</h3>
                     <p>Không lo ẩm mốc, phù hợp với môi trường có độ ẩm cao.</p>
-                
+
                 </div>
                 <div class="reason-card">
 
                     <div class="reason-icon"><i class="fa-solid fa-bug-slash"></i></div>
                     <h3>Chống mối mọt</h3>
                     <p>Xoá tan nỗi lo cửa bị tấn công bởi mối mọt.</p>
-                
+
                 </div>
                 <div class="reason-card">
 
                     <div class="reason-icon"><i class="fa-solid fa-fire-extinguisher"></i></div>
                     <h3>Chống cháy lan</h3>
                     <p>Không dẫn lửa, an toàn trong sử dụng, giúp giảm thiểu tối đa thiệt hại tài sản và con người.</p>
-                
+
                 </div>
                 <div class="reason-card">
 
                     <div class="reason-icon"><i class="fa-solid fa-cube"></i></div>
                     <h3>Không cong vênh co ngót</h3>
                     <p>Không biến dạng, nứt nẻ sau thời gian dài sử dụng dưới mọi thời tiết.</p>
-                
+
                 </div>
                 <div class="reason-card">
 
                     <div class="reason-icon"><i class="fa-solid fa-volume-xmark"></i></div>
                     <h3>Cách âm tốt</h3>
                     <p>Hạn chế tiếng ồn từ bên ngoài, mang lại không gian sống riêng tư, thoải mái.</p>
-                
+
                 </div>
                 <div class="reason-card">
 
                     <div class="reason-icon"><i class="fa-solid fa-temperature-half"></i></div>
                     <h3>Cách nhiệt tốt</h3>
                     <p>Giữ nhiệt độ phòng ổn định mặc cho sự thay đổi khắc nghiệt của thời tiết.</p>
-                
+
                 </div>
             </div>
 
@@ -234,34 +238,34 @@
             <!-- Phần 2: Vật liệu cao cấp -->
             <div class="materials-gallery" style="margin-bottom: 80px;">
                 <h3 class="subsection-title text-center" style="margin-bottom: 40px; font-size: 1.8rem; color: var(--primary-color);">SỬ DỤNG NGUYÊN VẬT LIỆU CAO CẤP</h3>
-                <div class="gallery-grid">
+                <div class="gallery-grid materials-bento">
                     <div class="material-card" style="position: relative; aspect-ratio: 4/3; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
                         <img src="images/phoi-pvc.png" alt="Phôi PVC" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                        <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 60%, transparent 100%); padding: 40px 20px 20px; color: white; text-align: left;">
+                        <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(16,24,64,0.72); padding: 16px 18px 16px; color: white; text-align: left;">
                             <h4 style="margin: 0; font-size: 1.2rem; text-transform: uppercase; line-height: 1.4;">PHÔI PVC CAO CẤP<br>TIÊU CHUẨN NHÀ MÁY</h4>
                         </div>
                     </div>
                     <div class="material-card" style="position: relative; aspect-ratio: 4/3; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
                         <img src="images/keo-jowat.png" alt="Keo Jowat" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                        <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 60%, transparent 100%); padding: 40px 20px 20px; color: white; text-align: left;">
+                        <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(16,24,64,0.72); padding: 16px 18px 16px; color: white; text-align: left;">
                             <h4 style="margin: 0; font-size: 1.2rem; text-transform: uppercase; line-height: 1.4;">MIVIDOOR SỬ DỤNG<br>KEO JOWAT ĐỨC</h4>
                         </div>
                     </div>
                     <div class="material-card" style="position: relative; aspect-ratio: 4/3; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
                         <img src="images/phim-pvc.png" alt="Phim PVC" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                        <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 60%, transparent 100%); padding: 40px 20px 20px; color: white; text-align: left;">
+                        <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(16,24,64,0.72); padding: 16px 18px 16px; color: white; text-align: left;">
                             <h4 style="margin: 0; font-size: 1.2rem; text-transform: uppercase; line-height: 1.4;">LỚP PHIM PVC<br>CAO CẤP DÀY DẶN</h4>
                         </div>
                     </div>
                     <div class="material-card" style="position: relative; aspect-ratio: 4/3; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
                         <img src="images/burkle-machine.webp" alt="Công nghệ phủ phim máy Burkle" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                        <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 60%, transparent 100%); padding: 40px 20px 20px; color: white; text-align: left;">
+                        <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(16,24,64,0.72); padding: 16px 18px 16px; color: white; text-align: left;">
                             <h4 style="margin: 0; font-size: 1.2rem; text-transform: uppercase; line-height: 1.4;">CÔNG NGHỆ PHỦ PHIM<br>MÁY BURKLE NHẬP TỪ ĐỨC</h4>
                         </div>
                     </div>
                     <div class="material-card" style="position: relative; aspect-ratio: 4/3; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
                         <img src="images/wpb-plastic.webp" alt="Chêm đố nhựa WPB" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                        <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 60%, transparent 100%); padding: 40px 20px 20px; color: white; text-align: left;">
+                        <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(16,24,64,0.72); padding: 16px 18px 16px; color: white; text-align: left;">
                             <h4 style="margin: 0; font-size: 1.2rem; text-transform: uppercase; line-height: 1.4;">CHÊM ĐỐ NHỰA WPB<br>VÀO 4 CẠNH CÁNH CỬA</h4>
                         </div>
                     </div>
@@ -291,7 +295,7 @@
             <!-- Phần 6: Tâm huyết người thợ -->
             <div class="craftsmanship pattern-grid">
                 <div class="craft-img">
-                    <img src="images/tho-mividoor.png" alt="Tâm huyết người thợ" style="width: 100%; height: 100%; object-fit: cover; display: block;" onerror="this.src='https://via.placeholder.com/600x600?text=Nguoi+Tho+Mividoor'">
+                    <img src="images/tho-mividoor-new.jpg" alt="Tâm huyết người thợ" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                 </div>
                 <div class="craft-text">
                     <h3 style="font-size: 1.8rem; margin-bottom: 20px; font-weight: 800; display: flex; align-items: center; gap: 15px;">
@@ -305,7 +309,7 @@
                     </div>
                 </div>
             </div>
-        
+
             <div class="text-center" style="margin-top: 60px;">
                 <a href="ve-chung-toi.html" class="btn btn-outline-primary" style="padding: 12px 40px;  font-weight: 700; border-radius: 50px;">Xem thêm về Mividoor</a>
             </div>
@@ -356,7 +360,7 @@
             <h2 class="section-title text-center">BẢNG MÀU PVC MIVIDOOR</h2>
             <div class="title-underline"></div>
             <p class="text-center" style="margin-bottom: 40px; color: var(--text-muted); font-size: 1.1rem;">Bộ sưu tập 18 màu phim cao cấp, vân gỗ tự nhiên sắc nét</p>
-            
+
             <div class="colors-grid" id="pvc-colors-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 15px;">
                 <!-- Dùng JS để render 18 màu -->
             </div>
@@ -370,19 +374,19 @@
                 <h2 class="section-title">SẢN PHẨM</h2>
                 <div class="title-underline"></div>
             </div>
-            
+
             <!-- Category Tabs -->
             <div class="category-tabs text-center" style="margin-bottom: 40px; display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
-                <button class="btn btn-outline-primary tab-btn active" style="border-radius: 30px; padding: 10px 25px; font-weight: 600;" onclick="filterProducts(event, 'all')">Tất cả</button>
-                <button class="btn btn-outline-primary tab-btn" style="border-radius: 30px; padding: 10px 25px; font-weight: 600;" onclick="filterProducts(event, 'cua-phang')">Cửa phẳng</button>
-                <button class="btn btn-outline-primary tab-btn" style="border-radius: 30px; padding: 10px 25px; font-weight: 600;" onclick="filterProducts(event, 'cua-phao-chi')">Cửa phào chỉ</button>
-                <button class="btn btn-outline-primary tab-btn" style="border-radius: 30px; padding: 10px 25px; font-weight: 600;" onclick="filterProducts(event, 'cua-cnc')">Cửa CNC</button>
-                <button class="btn btn-outline-primary tab-btn" style="border-radius: 30px; padding: 10px 25px; font-weight: 600;" onclick="filterProducts(event, 'cua-o-kinh')">Cửa ô kính / lá sách</button>
+                <button class="btn btn-outline-primary tab-btn active" style="border-radius: 4px; padding: 10px 25px; font-weight: 600;" onclick="filterProducts(event, 'all')">Tất cả</button>
+                <button class="btn btn-outline-primary tab-btn" style="border-radius: 4px; padding: 10px 25px; font-weight: 600;" onclick="filterProducts(event, 'cua-phang')">Cửa phẳng</button>
+                <button class="btn btn-outline-primary tab-btn" style="border-radius: 4px; padding: 10px 25px; font-weight: 600;" onclick="filterProducts(event, 'cua-phao-chi')">Cửa phào chỉ</button>
+                <button class="btn btn-outline-primary tab-btn" style="border-radius: 4px; padding: 10px 25px; font-weight: 600;" onclick="filterProducts(event, 'cua-cnc')">Cửa CNC</button>
+                <button class="btn btn-outline-primary tab-btn" style="border-radius: 4px; padding: 10px 25px; font-weight: 600;" onclick="filterProducts(event, 'cua-o-kinh')">Cửa ô kính / lá sách</button>
             </div>
             <div class="collection-grid" id="product-grid">
                 <!-- Products will be generated by JS -->
             </div>
-        
+
             <div class="text-center" style="margin-top: 50px;">
                 <a href="san-pham.html" class="btn btn-outline-primary" style="padding: 12px 40px;  font-weight: 700; border-radius: 50px;">Xem tất cả sản phẩm</a>
             </div>
@@ -395,7 +399,7 @@
                 <h2 class="section-title" style="color: var(--primary-color);">BST MIVIDOOR LUXURY 2026</h2>
                 <p style="margin-top: 15px; font-size: 1.1rem; color: var(--text-muted);">Những tuyệt tác cửa sang trọng bậc nhất trưng bày tại Vietbuild HCM 2026</p>
             </div>
-            
+
             <div class="luxury-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
                 <div class="luxury-card" style="position: relative; overflow: hidden; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); background: #fff; height: 100%; display: flex; flex-direction: column;">
                     <img src="images/luxury-1.png" alt="Luxury Door 01" style="width: 100%; height: 400px; object-fit: contain; display: block; background: #f8f9fa;" onerror="this.src='https://via.placeholder.com/600x800?text=Luxury+Door+01'">
@@ -461,7 +465,7 @@
                     </div>
                 </div>
             </div>
-        
+
             <div class="text-center" style="margin-top: 50px;">
                 <a href="bst-luxury.html" class="btn btn-outline-primary" style="padding: 12px 40px;  font-weight: 700; border-radius: 50px;">Xem toàn bộ bộ sưu tập</a>
             </div>
@@ -587,7 +591,7 @@
             </div>
         </div>
     </footer>
-    <script src="script.js?v=3"></script>
+    <script src="script.js?v=7"></script>
     </div>
 </body>
 </html>
