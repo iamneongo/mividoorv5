@@ -483,33 +483,7 @@ ul {
     inset -2px -2px 4px rgba(0, 0, 0, 0.04);
 }
 
-/* Shining Effect Overlay */
-.reason-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    45deg,
-    transparent,
-    rgba(255, 255, 255, 0.7),
-    transparent
-  );
-  background-size: 200% 200%;
-  animation: shine 2.5s infinite ease-in-out;
-  border-radius: 30px;
-  pointer-events: none;
-  z-index: 1;
-}
-
-@keyframes shine {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
+/* Shining Effect Overlay removed for clarity */
 .reason-card > * {
   position: relative;
   z-index: 2;
